@@ -61,20 +61,13 @@ header h3 {
     font-weight: normal;
 }
 
-.image-placeholder {
-    width: 280px; 
+/* Image Styling */
+.assignment img {
+    width: 280px;
     height: 150px;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 10px auto; 
-}
-
-.image-placeholder::before {
-    content: "300 x 150";
-    font-size: 16px;
-    color: #555;
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .assignment p {
@@ -89,3 +82,56 @@ header h3 {
         font-size: 20px;
         margin-top: 10px;
     }
+
+    header h2 {
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    header h3 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .assignments {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .assignment img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .assignment p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header h3 {
+        font-size: 18px;
+    }
+
+    .assignment h4 {
+        font-size: 16px;
+    }
+
+    .assignment p {
+        font-size: 14px;
+    }
+}
