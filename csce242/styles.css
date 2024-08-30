@@ -9,7 +9,7 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     color: black;
-    font-weight: normal; /* Ensures all text is unbolded */
+    font-weight: normal;
 }
 
 .left-align {
@@ -41,7 +41,7 @@ header h3 {
 
 .assignment {
     background-color: #e6f0ff;
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     border-radius: 8px;
     width: 300px;
     text-align: center;
@@ -55,17 +55,17 @@ header h3 {
 .assignment h4 a {
     text-decoration: none;
     color: black;
-    font-weight: normal; /* Ensures the links are not bold */
+    font-weight: normal;
 }
 
 .image-placeholder {
-    width: 280px; /* Slightly smaller than the assignment container */
+    width: 280px; 
     height: 150px;
     background-color: #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 10px auto; /* Centered within the assignment container */
+    margin: 0 auto 10px auto; 
 }
 
 .image-placeholder::before {
