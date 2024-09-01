@@ -4,11 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
@@ -16,51 +14,190 @@ body {
     flex-direction: column;
     margin: 0;
 }
-
-/* Header Styling */
-header {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
+/* Ensure #content covers the full height of the viewport */
+#content {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+/* Main Header */
+#main-header {
+    background-color: white;
+    padding: 10px;
+}
+#main-header h1 {
+    text-align: center;
+    color: lightblue;
+}
+/* Navigation */
+#main-nav {
+    background-color: lightcoral;
+    border: 2px solid lightblue;
+}
+#main-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#main-nav li {
+    flex: 1;
+}
 
-header h1, header h2, header h3 {
-    color: black;
+#main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-right: 2px solid lightblue;
+}
+
+#main-nav li:last-child a {
+    border-right: none;
+}
+
+/* Main Content */
+#main-content {
+    display: flex;
+    flex: 1;
+    background-color: lightblue;
+    align-items: stretch;
+}
+
+/* Article Styling */
+article {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: inherit;
+}
+
+.sections-container section {
+    flex: 1 1 calc(25% - 20px);
+    background-color: lightblue;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sections-container h2,
+.sections-container h3,
+.sections-container h4 {
+    color: white;
     margin-bottom: 10px;
 }
 
-/* Default order for desktop view */
-header h1.left-align {
-    order: 1; /* Annie Koshy appears first */
+.sections-container p {
+    color: white;
 }
 
-header h2 {
-    order: 2; /* CSCE 242 appears second */
+.sections-container img {
+    max-width: 100%;
+    height: auto;
 }
 
-header h3 {
-    order: 3; /* Assignments appear last */
+/* Sidebar */
+#main-aside {
+    flex: 1;
+    background-color: lightcoral;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-/* Mobile view: rearrange the elements */
+#main-aside h2 {
+    color: white;
+}
+
+#main-aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main-aside a {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Footer */
+#main-footer {
+    background-color: white;
+    padding: 20px;
+}
+
+#main-footer h2 {
+    color: lightblue;
+}
+
+#main-footer section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#main-footer img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+#main-footer h3 {
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+#main-footer .copyright {
+    text-align: center;
+    color: lightblue;
+}
+
+#main-footer p {
+    color: lightblue;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    header {
-        display: flex;
+    #main-nav ul {
         flex-direction: column;
     }
 
-    /* Mobile-specific order */
-    header h1.left-align {
-        order: 2; /* Annie Koshy appears after CSCE 242 */
+    #main-nav a {
+        border-right: none;
+        border-bottom: 2px solid lightblue;
+    }
+    #main-nav li:last-child a {
+        border-bottom: none;
+    }
+    .sections-container section {
+        flex: 1 1 100%;
     }
 
-    header h2 {
-        order: 1;
+    /* Move Sidebar Below Sections and Above Footer */
+    #main-content {
+        flex-direction: column;
     }
-
-    header h3 {
+    #main-aside {
+        order: 2; /* Sidebar appears below sections */
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #main-footer {
         order: 3;
+    }
+    #main-footer section {
+        flex-direction: column;
+        align-items: flex-start; /* Align text to the left */
+        text-align: left;
+    }
+    #main-footer img {
+        margin: 0 0 10px 0;
+        align-self: center; /* Center the image in mobile */
+    }
+    /* Left-align copyright text in mobile */
+    #main-footer .copyright {
+        text-align: left;
+        width: 100%;
     }
 }
