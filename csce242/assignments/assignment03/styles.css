@@ -4,11 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
@@ -16,53 +14,47 @@ body {
     flex-direction: column;
     margin: 0;
 }
-
 /* Ensure #content covers the full height of the viewport */
 #content {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 /* Main Header */
 #main-header {
     background-color: white;
     padding: 10px;
 }
-
 #main-header h1 {
     text-align: center;
     color: lightblue;
 }
-
 /* Navigation */
 #main-nav {
     background-color: lightcoral;
-    border: 2px solid lightblue; /* Border around the entire navigation */
+    border: 2px solid lightblue;
 }
-
 #main-nav ul {
     display: flex;
     padding: 0;
     margin: 0;
-    list-style: none; /* Remove default list styling */
+    list-style: none;
 }
-
 #main-nav li {
-    flex: 1; /* Ensure each link takes up equal space */
+    flex: 1;
 }
 
 #main-nav a {
     text-decoration: none;
-    color: white; /* White text for navigation links */
+    color: white;
     padding: 10px;
     display: block;
-    text-align: center; /* Center text within each link */
-    border-right: 2px solid lightblue; /* Divider between links */
+    text-align: center;
+    border-right: 2px solid lightblue;
 }
 
 #main-nav li:last-child a {
-    border-right: none; /* Remove the right border for the last link */
+    border-right: none;
 }
 
 /* Main Content */
@@ -73,11 +65,13 @@ body {
     align-items: stretch;
 }
 
-.sections-container {
+/* Article Styling */
+article {
     display: flex;
     flex: 3;
     flex-wrap: wrap;
     gap: 10px;
+    background-color: inherit;
 }
 
 .sections-container section {
@@ -86,15 +80,14 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    
+    align-items: center;
 }
 
 .sections-container h2,
 .sections-container h3,
 .sections-container h4 {
-    color: white; /* Change this color as needed */
-    margin-bottom: 10px; /* Space between title and image */
+    color: white;
+    margin-bottom: 10px;
 }
 
 .sections-container p {
@@ -102,8 +95,8 @@ body {
 }
 
 .sections-container img {
-    max-width: 100%; /* Ensure images fit within the section */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Sidebar */
@@ -111,53 +104,32 @@ body {
     flex: 1;
     background-color: lightcoral;
     padding: 20px;
-    margin-left: 20px;
     height: 100%;
     box-sizing: border-box;
 }
 
-/* Ensure the sidebar touches the top and bottom of the content */
-#content {
-    display: flex;
-}
-
-#main-aside {
-    flex: 0 0 300px; /* Set a fixed width if needed */
-}
-
 #main-aside h2 {
-    color: white; /* White text for the "Links" title */
+    color: white;
 }
 
 #main-aside ul {
-    list-style-type: none; /* Removes bullets */
-    padding-left: 0; /* Removes default padding */
+    list-style-type: none;
+    padding-left: 0;
 }
 
 #main-aside a {
-    text-decoration: underline; /* Keeps the underline for the links */
-    color: white; /* White text for sidebar links */
+    text-decoration: underline;
+    color: white;
 }
 
 /* Footer */
 #main-footer {
     background-color: white;
-    color: white;
     padding: 20px;
 }
 
 #main-footer h2 {
     color: lightblue;
-}
-#main-footer p.copyright {
-    color: lightblue;
-}
-#main-footer section div p {
-    color: lightblue; /* Blue text color for p elements inside div */
-}
-
-#main-footer section div h3 {
-    color: lightblue; /* Blue text color for h3 elements inside div */
 }
 
 #main-footer section {
@@ -171,25 +143,18 @@ body {
     margin-right: 20px;
 }
 
-#main-footer section div {
-    display: flex;
-    flex-direction: column;
-}
-
 #main-footer h3 {
-    text-align: left;
-    padding-left: 0px;
+    color: lightblue;
     margin-bottom: 10px;
 }
 
-#main-footer h2 {
-    text-align: left;
-    padding-left: 7px;
-    padding: 10px;
+#main-footer .copyright {
+    text-align: center;
+    color: lightblue;
 }
 
 #main-footer p {
-    margin: 0;
+    color: lightblue;
 }
 
 /* Media Queries */
@@ -200,28 +165,39 @@ body {
 
     #main-nav a {
         border-right: none;
-        border-bottom: 2px solid lightblue; /* Use lightblue to match the border */
+        border-bottom: 2px solid lightblue;
     }
-
     #main-nav li:last-child a {
-        border-bottom: none; /* Remove bottom border for the last link */
+        border-bottom: none;
     }
-
     .sections-container section {
         flex: 1 1 100%;
     }
 
+    /* Move Sidebar Below Sections and Above Footer */
+    #main-content {
+        flex-direction: column;
+    }
     #main-aside {
+        order: 2; /* Sidebar appears below sections */
         margin-left: 0;
         margin-top: 20px;
     }
-
+    #main-footer {
+        order: 3;
+    }
     #main-footer section {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Align text to the left */
+        text-align: left;
     }
-
     #main-footer img {
         margin: 0 0 10px 0;
+        align-self: center; /* Center the image in mobile */
+    }
+    /* Left-align copyright text in mobile */
+    #main-footer .copyright {
+        text-align: left;
+        width: 100%;
     }
 }
