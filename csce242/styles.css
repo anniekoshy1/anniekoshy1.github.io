@@ -120,3 +120,44 @@ header h3 {
         font-size: 14px;
     }
 }
+/* Reusing assignment styles for projects */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: lightpink;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.project h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project h4 a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.project img {
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+}
