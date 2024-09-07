@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
     background: #fff;
 }
 
@@ -82,7 +82,7 @@ body {
 .header {
     text-align: center;
     color: white;
-    padding: 0; /* Removed padding to make the image touch the garnet box */
+    padding: 0;
     position: relative;
 }
 
@@ -121,13 +121,16 @@ body {
 }
 
 .cta-button {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px; /* Sufficient padding around text */
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white; /* Maintains a subtle border */
+  font-size: 14px; /* Font size to balance visibility and space */
+  width: fit-content; /* Adjusts width to fit the text */
 }
+
 
 .cta-button:hover {
     background-color: #5c0a09;
@@ -198,7 +201,7 @@ body {
 .cta-button {
     background-color: black;
     color: white;  /* Text color */
-    padding: 5px;  /* Minimal padding around the text */
+    padding: 10px 20px;  /* Minimal padding around the text */
     text-decoration: none;  /* No underline on the button text */
     display: inline-block;  /* Ensures button is properly aligned */
     border: 2px solid white;  /* Adds a white border around the button */
@@ -224,7 +227,7 @@ body {
 .investment .cta-button {
     background-color: #7c0d0e;  /* Garnet background for the button */
     color: white;  /* White text for contrast */
-    padding: 10px 20px;  /* Padding around the text */
+    padding: 5px;  /* Padding around the text */
     text-decoration: none;  /* Removes underline from the link */
     display: inline-block;  /* Aligns the button properly */
     border: 2px solid white;  /* White border for distinction */
@@ -321,24 +324,24 @@ body {
 #main-footer {
     background:#73000A;
   }
-  #logo-links li {
+  #links li {
     list-style: none;
   }
   
-  #link-holder {
+  #all-links {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
   
   
-  #logo-links {
+  #links {
     display: flex;
     flex: 1;
     gap: 10px;
   }
   
-  #link-holder li {
+  #all-links li {
     list-style-type: none;
   }
   
@@ -395,7 +398,7 @@ body {
     font-size: xx-small;
   }
   
-  #label, #logo-search input, #user-nav a, main h1, #remarkable-research, #overcoming-barriers {
+  #label, #footer-logo input, #user-nav a, main h1, #remarkable-research, #overcoming-barriers {
     color: white;
   }
   
@@ -467,21 +470,21 @@ body {
     color: #73000A;
   }
   
-  #link-holder a {
+  #all-links a {
     color: white;
     text-decoration: none;
   }
   
-  #link-holder {
+  #all-links {
     color: white;
     font-weight:100;
   }
   
-  #link-holder ul {
+  #all-links ul {
     padding: 10px;
   }
   
-  .underline {
+  .first-one {
     border-bottom: 2px solid white;
   }
   
@@ -492,7 +495,7 @@ body {
   
   /* Larger Resolutions */
   @media only screen and (min-width:768px) {
-    .horizontal-nav ul, .flex-container {
+    .horizontal-nav ul, .bottom {
     display: flex;
     }
   
@@ -506,7 +509,7 @@ body {
       flex: 1;
     }
   
-    #logo-search {
+    #footer-logo {
       padding: 5px;
       justify-content: space-between;
       margin: 10px 10%;
@@ -560,7 +563,7 @@ body {
       flex: 1;
     }
   
-    #research-spots .flex-container {
+    #research-spots .bottom {
       margin-left: 5%;
       margin-right: 5%;
       justify-content: space-between;
@@ -590,9 +593,46 @@ body {
       margin-right: 50%;
     }
   
-    #logo-links {
+    #links {
       position: absolute;
       right: 5%;
     }
     
   }
+  @media (max-width: 768px) {
+    .gateways {
+        display: none; /* This will hide the gateways section on screens 768px or smaller */
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-left {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .header img {
+        max-height: 300px;
+    }
+
+    .garnet-menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar-left .text {
+        text-align: center;
+    }
+
+    .top-bar {
+        font-size: 10px;
+    }
+
+    .garnet-box {
+        left: 10%; /* Adjust to center it more appropriately on smaller screens */
+        bottom: 0; /* Ensure it touches the image on all screen sizes */
+    }
+}
