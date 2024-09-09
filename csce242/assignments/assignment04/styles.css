@@ -1,9 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Berlingske Serif', 'Georgia', serif;
+    font-family: 'Berlingske Sans';
     background: #fff;
 }
-
 /* Top Bar styles */
 .top-bar {
     background-color: #000;
@@ -98,8 +97,8 @@ body {
     color: white;
     text-align: left;
     position: absolute;
-    bottom: 0; /* Adjusted to touch the image */
-    left: 25%; /* Nudge slightly to the right */
+    bottom: 0;
+    left: 25%;
 }
 
 .garnet-box h1 {
@@ -121,16 +120,15 @@ body {
 }
 
 .cta-button {
-  background-color: black;
-  color: white;
-  padding: 5px 10px; /* Sufficient padding around text */
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid white; /* Maintains a subtle border */
-  font-size: 14px; /* Font size to balance visibility and space */
-  width: fit-content; /* Adjusts width to fit the text */
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    font-size: 14px;
+    width: fit-content;
 }
-
 
 .cta-button:hover {
     background-color: #5c0a09;
@@ -166,473 +164,438 @@ body {
     }
 
     .garnet-box {
-        left: 10%; /* Adjust to center it more appropriately on smaller screens */
-        bottom: 0; /* Ensure it touches the image on all screen sizes */
+        left: 10%;
+        bottom: 0;
     }
 }
+
 /* Split screen styles */
 .split-screen {
-    display: flex;  /* Enables flexbox layout */
-    align-items: stretch;  /* Ensures that the children stretch to fill the container */
+    display: flex;
+    align-items: stretch;
 }
 
 .half-image, .half-text {
-    flex: 1;  /* Each takes up half of the split-screen container */
-    position: relative;  /* Needed for absolute positioning within each */
-    overflow: hidden;  /* Prevents content from spilling out */
+    flex: 1;
+    position: relative;
+    overflow: hidden;
 }
 
 .half-image img {
-    width: 100%;  /* Ensures the image covers the full container */
-    height: 100%;  /* Stretches the image to cover the full height of its container */
-    object-fit: cover;  /* Ensures the image covers the area without distorting its aspect ratio */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .half-text {
-    background-color: #7c0d0e;  /* Garnet background color */
-    color: white;  /* White text for readability */
-    padding: 20px;  /* Padding inside the garnet box */
+    background-color: #7c0d0e;
+    color: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Centers the text vertically */
+    justify-content: center;
 }
+
 .half-text h3, .half-text p, .half-text a {
-    color: white;  /* Ensures all text elements are white */
+    color: white;
 }
-.cta-button {
-    background-color: black;
-    color: white;  /* Text color */
-    padding: 10px 20px;  /* Minimal padding around the text */
-    text-decoration: none;  /* No underline on the button text */
-    display: inline-block;  /* Ensures button is properly aligned */
-    border: 2px solid white;  /* Adds a white border around the button */
-    font-size: 16px;  /* Adjust the font size as needed */
-}
+
 /* Investment section styles */
 .investment {
-    background-color: #f0f0f0;  /* Light grey background */
-    text-align: center;  /* Center aligns all text and content */
-    padding: 20px;  /* Adds padding for better spacing */
-    color: #333;  /* Default text color for better readability on light background */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    color: #333;
 }
 
 .investment h2 {
-    color: #7c0d0e;  /* Garnet color for the heading */
+    color: #7c0d0e;
 }
 
 .investment p {
-    max-width: 800px;  /* Restricts paragraph width for better readability */
-    margin: 20px auto;  /* Centers the paragraph and adds vertical spacing */
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .investment .cta-button {
-    background-color: #7c0d0e;  /* Garnet background for the button */
-    color: white;  /* White text for contrast */
-    padding: 5px;  /* Padding around the text */
-    text-decoration: none;  /* Removes underline from the link */
-    display: inline-block;  /* Aligns the button properly */
-    border: 2px solid white;  /* White border for distinction */
-    margin-top: 20px;  /* Adds space above the button */
-    font-size: 16px;  /* Adjusts font size */
-    cursor: pointer;  /* Changes cursor to pointer on hover */
+    background-color: #7c0d0e;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .investment .cta-button:hover {
-    background-color: #5c0a09;  /* Darker garnet on hover for visual feedback */
-    border-color: #ffffff;  /* Keeps the white border on hover */
+    background-color: #5c0a09;
+    border-color: #ffffff;
 }
+
 /* Paying for School section */
 .paying {
     display: flex;
-    justify-content: space-around; /* Distributes space evenly around the items */
-    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
-    align-items: flex-start; /* Aligns items at the start of the flex container */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
     padding: 20px;
-    background-color: #f9f9f9; /* Optional: adds a background color for visibility */
+    background-color: #f9f9f9;
 }
 
 .paying > div {
-    flex: 1; /* Gives each div an equal chance to grow */
-    min-width: 250px; /* Minimum width before wrapping */
-    margin: 10px; /* Spacing between each div */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for depth */
-    background-color: #fff; /* Background color for each image container */
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
     padding: 10px;
-    text-align: center; /* Centers the content */
+    text-align: center;
 }
 
 .paying img {
-    width: 100%; /* Responsive image width */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 200px; /* Maximum width of the image */
+    width: 100%;
+    height: auto;
+    max-width: 200px;
 }
 
 .paying h4 {
-    color: #7c0d0e; /* Garnet color for subheadings */
-    margin-top: 10px; /* Space above the subheading */
+    color: #7c0d0e;
+    margin-top: 10px;
 }
 
 .paying p {
-    font-size: 14px; /* Smaller font size for descriptive text */
-    color: #666; /* Lighter text color for readability */
+    font-size: 14px;
+    color: #666;
 }
+
 /* Take section styles */
 .Take {
-    display: flex;  /* Arranges the child elements (image and content container) side by side */
-    align-items: center;  /* Centers the items vertically */
-    background-color: #000;  /* Sets the background color to black */
-    color: white;  /* Sets the text color to white for readability */
-    padding: 20px;  /* Adds padding around the content */
-    justify-content: center; /* Centering the content horizontally */
-    padding-left: 40px; /* Adds additional padding on the left to scoot everything to the right */
+    display:flex;
+    align-items:center;
+    background-color:#000;
+    color:white;
+    justify-content:center;
+    padding-left:40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .Take img {
-    width: 200px;  /* Fixed width for the image */
-    height: auto;  /* Keeps the aspect ratio of the image */
-    margin-right: 20px;  /* Adds space between the image and the text */
+    width: 200px;
+    height:auto;
+    margin-right:20px;
 }
 
 .Take .content {
-    display: flex;  /* Uses flexbox to arrange content vertically */
-    flex-direction: column;  /* Stacks the content vertically */
-    flex: 1;  /* Allows the content container to take up the remaining space */
-    align-items: flex-start;  /* Aligns content to the start (left alignment) */
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    align-items:flex-start;
 }
 
 .Take h3 {
-    margin-bottom: 10px;  /* Space between header and paragraph */
+    margin-bottom:10px;
 }
 
 .Take p {
-    margin-bottom: 20px;  /* Space between paragraph and button */
+    margin-bottom:20px;
 }
 
 .Take .cta-button {
-    background-color: #7c0d0e;  /* Garnet background color */
-    color: white;  /* White text color */
-    border: 2px solid white;  /* White border */
-    padding: 10px 20px;  /* Padding inside the button */
-    text-decoration: none;  /* Removes underline from the link */
-    display: block;  /* Block display to occupy the full width of its container */
-    width: fit-content;  /* Makes the button only as wide as its content */
-    cursor: pointer;  /* Changes cursor to pointer on hover */
+    background-color:#7c0d0e;
+    color:white;
+    border:2px solid white;
+    padding:10px 20px;
+    text-decoration:none;
+    display:block;
+    width:fit-content;
+    cursor:pointer;
 }
 
 .Take .cta-button:hover {
-    background-color: #5c0a09;  /* Darker shade of garnet on hover */
+    background-color:#5c0a09;
 }
+
+/* Footer styles */
 #main-footer {
-    background:#73000A;
-  }
-  #links li {
-    list-style: none;
-  }
-  
-  #all-links {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
-  #links {
-    display: flex;
-    flex: 1;
-    gap: 10px;
-  }
-  
-  #all-links li {
-    list-style-type: none;
-  }
-  
-  #bottom-bar {
-    background: black;
-  }
-  
-  #bottom-bar p {
-    padding: 1px;
-    position: relative;
-    left: 10%;
-  }
-  
-  /* Horizontal Navigation */
-  .horizontal-nav ul {
-    padding-left: 0px;
-  }
-  
-  .horizontal-nav li {
-    list-style-type: none;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  
-  /* Navigation */
-  #main-nav {
-    text-align: center;
-    background-color: #73000A;
-    padding: 1px;
-  }
-  
-  #main-nav ul {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  #main-nav li {
-    margin: 0 2px;
-  }
-  
-  
-  /* Typography */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .bold {
-    font-weight: bold;
-  }
-  
-  #user-nav {
-    font-size: xx-small;
-  }
-  
-  #label, #footer-logo input, #user-nav a, main h1, #remarkable-research, #overcoming-barriers {
-    color: white;
-  }
-  
-  .horizontal-nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  #remarkable-research h1 {
-    font-family: serif;
-    font-size: 2.7em;
-  }
-  
-  #overcoming-barriers h1, #new-understanding h1, #breakthrough h1, #leading-edge h1 {
-    font-size: 2.7em;
-  }
-  
-  #remarkable-research p, #overcoming-barriers p, #breakthrough p, #leading-edge p {
-    font-size: 1.1em;
-  }
-  
-  #overcoming-barriers button {
-    color: white;
-    font-size: 1.4em;
-  }
-  
-  #new-understanding button, #investing-in-research button, #office-vp button {
-    color: white;
-    font-size: 1.4em;
-  }
-  
-  #new-understanding h1, .col1of4 h3, #research-spots h1, #investing-in-research h1, #office-vp h1 {
+  background: #73000A;
+  padding: 10px 0;
+  margin-top: 0;   /* Ensures no space between sections */
+}
+
+#links li {
+    list-style:none;
+}
+
+#all-links {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#links {
+    display:flex;
+    flex:1;
+    gap:10px;
+}
+
+#all-links li {
+    list-style-type:none;
+}
+
+#bottom-bar {
+    background:black;
+    margin-top:0;
+    padding:0;
+}
+
+hr {
+    margin-bottom:0;
+}
+
+#bottom-bar p {
+    padding:1px;
+    position:relative;
+    left:10%;
+}
+
+.horizontal-nav ul {
+    padding-left:0px;
+}
+
+.horizontal-nav li {
+    list-style-type:none;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+#main-nav {
+    text-align:center;
+    background-color:#73000A;
+    padding:1px;
+}
+
+#main-nav ul {
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#main-nav li {
+    margin:0 2px;
+}
+
+.body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+#user-nav {
+    font-size:xx-small;
+}
+
+#label, #footer-logo input, #user-nav a, main h1, #remarkable-research, #overcoming-barriers {
+    color:white;
+}
+
+.horizontal-nav a {
+    color:white;
+    text-decoration:none;
+}
+
+#remarkable-research h1 {
+    font-family:serif;
+    font-size:2.7em;
+}
+
+#overcoming-barriers h1, #new-understanding h1, #breakthrough h1, #leading-edge h1 {
+    font-size:2.7em;
+}
+
+#remarkable-research p, #overcoming-barriers p, #breakthrough p, #leading-edge p {
+    font-size:1.1em;
+}
+
+#overcoming-barriers button {
+    color:white;
+    font-size:1.4em;
+}
+
+#new-understanding button, #investing-in-research button, #office-vp button {
+    color:white;
+    font-size:1.4em;
+}
+
+#new-understanding h1, .col1of4 h3, #research-spots h1, #investing-in-research h1, #office-vp h1 {
     color:#73000A;
-  }
-  
-  #research-spots a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  #research-spots h1 {
-    font-size: 2.7em;
-    font-family: serif;
-    text-align: center;
-  }
-  
-  #more-research-stories {
-    color: #73000A !important;
-  }
-  
-  #breakthrough, #leading-edge {
-    color: white;
-  }
-  
-  #breakthrough button, #leading-edge button, #better-world button {
-    color: white;
-    font-size: 1.4em;
-  }
-  
-  #text h1, #text p, #text button {
-    color: white;
-  }
-  
-  #office-vp h1 {
-    font-size: 2.7em;
-  }
-  
-  #office-vp a {
-    color: #73000A;
-  }
-  
-  #all-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  #all-links {
-    color: white;
+}
+
+#research-spots a {
+    text-decoration:none;
+    color:black;
+}
+
+#research-spots h1 {
+   
+
+ font-size:2.7em;
+    font-family:serif;
+    text-align:center;
+}
+
+#more-research-stories {
+    color:#73000A;
+}
+
+#breakthrough, #leading-edge {
+    color:white;
+}
+
+#breakthrough button, #leading-edge button, #better-world button {
+    color:white;
+    font-size:1.4em;
+}
+
+#text h1, #text p, #text button {
+    color:white;
+}
+
+#office-vp h1 {
+    font-size:2.7em;
+}
+
+#office-vp a {
+    color:#73000A;
+}
+
+#all-links a {
+    color:white;
+    text-decoration:none;
+}
+
+#all-links {
+    color:white;
     font-weight:100;
-  }
-  
-  #all-links ul {
-    padding: 10px;
-  }
-  
-  .first-one {
-    border-bottom: 2px solid white;
-  }
-  
-  #bottom-bar p {
-    color: white;
-    font-size: 10px;
-  }
-  
-  /* Larger Resolutions */
-  @media only screen and (min-width:768px) {
+}
+
+#all-links ul {
+    padding:10px;
+}
+.first-one {
+    border-bottom:2px solid white;
+}
+
+#bottom-bar p {
+    color:white;
+    font-size:10px;
+}
+
+@media only screen and (min-width:768px) {
     .horizontal-nav ul, .bottom {
-    display: flex;
+        display:flex;
     }
-  
+
     #user-nav ul {
-      position: relative;
-      top: 0%;
-      left:45%;
+        position:relative;
+        top:0%;
+        left:45%;
     }
-  
+
     #main-nav li {
-      flex: 1;
+        flex:1;
     }
-  
+
     #footer-logo {
-      padding: 5px;
-      justify-content: space-between;
-      margin: 10px 10%;
+        padding:5px;
+        justify-content:space-between;
+        margin:10px 10%;
     }
-  
-    .padding-right{
-      padding-right:20px;
+
+    .padding-right {
+        padding-right:20px;
     }
-  
+
     #landing h1 {
-      margin-top: -40px;
-      margin-left: 10%;
-      font-size: 3em;
+        margin-top:-40px;
+        margin-left:10%;
+        font-size:3em;
     }
-  
+
     #landing p {
-      margin-left: 30%;
-      margin-right: 30%;
-      font-size: 1.1em;
+        margin-left:30%;
+        margin-right:30%;
+        font-size:1.1em;
     }
-  
+
     #remarkable-research img {
-      flex: 6;
-      height: 600px;
+        flex:6;
+        height:600px;
     }
-  
+
     #column {
-      flex: 4;
-      flex-direction: column;
+        flex:4;
+        flex-direction:column;
     }
-  
+
     #remarkable-research #column {
-      justify-content:flex-end;
-      padding-left:20px;
-      margin-right: 7%;
+        justify-content:flex-end;
+        padding-left:20px;
+        margin-right:7%;
     }
-  
+
     #overcoming-barriers {
-      flex: 1;
-      min-width:0;
-      min-height:0;
-      overflow:hidden;
+        flex:1;
+        min-width:0;
+        min-height:0;
+        overflow:hidden;
     }
-  
+
     .column2, #column3 {
-      flex:1;
-      flex-direction: column;
+        flex:1;
+        flex-direction:column;
     }
-  
+
     #new-understanding {
-      flex: 1;
+        flex:1;
     }
-  
+
     #research-spots .bottom {
-      margin-left: 5%;
-      margin-right: 5%;
-      justify-content: space-between;
+        margin-left:5%;
+        margin-right:5%;
+        justify-content:space-between;
     }
-  
+
     .col1of4 {
-      margin: 20px;
+        margin:20px;
     }
-  
+
     #investing-in-research img {
-      margin-right: 10%;
-      margin-bottom:1%;
-      margin-top: 1%;
-      margin-left: 1%;
+        margin-right:10%;
+        margin-bottom:1%;
+        margin-top:1%;
+        margin-left:1%;
     }
-  
+
     #text {
-      max-width: 40%;
-      width: fit-content;
-      height: 40%;
-      position: relative;
-      top: 35%;
-      left: 5%;
+        max-width:40%;
+        width:fit-content;
+        height:40%;
+        position:relative;
+        top:35%;
+        left:5%;
     }
-  
+
     #office-vp .column2 {
-      margin-right: 50%;
+        margin-right:50%;
     }
-  
+
     #links {
-      position: absolute;
-      right: 5%;
-    }
-    
-  }
-  @media (max-width: 768px) {
-    .gateways {
-        display: none; /* This will hide the gateways section on screens 768px or smaller */
-    }
-
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar-left {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .header img {
-        max-height: 300px;
-    }
-
-    .garnet-menu a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .navbar-left .text {
-        text-align: center;
-    }
-
-    .top-bar {
-        font-size: 10px;
-    }
-
-    .garnet-box {
-        left: 10%; /* Adjust to center it more appropriately on smaller screens */
-        bottom: 0; /* Ensure it touches the image on all screen sizes */
+        position:absolute;
+        right:5%;
     }
 }
