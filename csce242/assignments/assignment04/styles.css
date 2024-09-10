@@ -599,3 +599,16 @@ hr {
         right:5%;
     }
 }
+@media (max-width: 768px) {
+    .garnet-menu {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .garnet-menu, .top-bar {
+        display: none;
+    }
+}
+.first-one {
+    border-bottom: none;
+}
