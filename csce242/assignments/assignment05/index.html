@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Assignment 5</h1>
+    <br>
+    <h2>Introduction to JavaScript</h2>
+
+    <div class="container">
+        <div class="count" onclick="incrementCount()">
+            <h3>Count</h3>
+            <br>
+            <p id="countValue">0</p>
+        </div>
+        
+        <div class="random-image">
+            <h3>Random Image</h3>
+            <br>
+            <img id="randomImage" src="https://picsum.photos/200" alt="Random Image" onclick="refreshImage()">
+        </div>
+        
+        <div class="slider-move">
+            <h3>Slider Move</h3>
+            <br>
+            <input type="range" id="slider" min="0" max="100" value="0" oninput="moveBox()">
+            <div id="box" class="box">200 x 200</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>@anniekoshy1.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
