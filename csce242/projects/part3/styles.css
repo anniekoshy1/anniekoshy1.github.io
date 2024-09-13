@@ -1,9 +1,4 @@
-:root {
-    --black: #000;
-    --white: #fff;
-    --gray: #ccc;
-}
-
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,22 +7,31 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: var(--black);
-    background-color: var(--white);
-    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
 }
 
-/* Header Section */
 header {
-    text-align: center;
+    background-color: #f5f5f5;
     padding: 20px;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .logo img {
     width: 50px;
-    height: auto;
-    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
 }
 
 nav ul {
@@ -35,77 +39,77 @@ nav ul {
     padding: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--black);
+    color: #333;
     padding: 10px 15px;
-    border: 1px solid var(--gray);
+    border: 1px solid #333;
+    border-radius: 5px;
 }
 
-/* Main Section */
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
 main {
-    padding: 40px 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.about-us {
-    text-align: center;
-    margin-bottom: 50px;
+section {
+    margin-bottom: 40px;
 }
 
-.image-placeholder img {
+.section-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-content img {
     width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 20px 0;
-}
-
-/* Goals Section */
-.goals {
-    text-align: center;
+    max-width: 400px;
+    border: 1px solid #ccc;
 }
 
 .goals-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.goal-image img {
-    width: 150px;
-    height: auto;
+    gap: 20px;
 }
 
 .goals ul {
+    flex: 2;
     list-style-type: disc;
-    padding: 0 20px;
+    padding-left: 20px;
 }
 
-/* Footer */
 footer {
-    text-align: center;
+    background-color: #f5f5f5;
     padding: 20px;
-    background-color: var(--gray);
-    position: relative;
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
 
-.home-button {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+    .goals-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

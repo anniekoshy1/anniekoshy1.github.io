@@ -1,17 +1,17 @@
 let count = 0;
 
-// Function to increment the count
+// counter
 function incrementCount() {
     count++;
     document.getElementById("countValue").innerHTML = count;
 }
 
-// Function to refresh the random image
+// random image
 function refreshImage() {
     document.getElementById("randomImage").src = "https://picsum.photos/200?random=" + new Date().getTime();
 }
 
-// Function to move the box with the slider
+// move the box with slider
 function moveBox() {
     let sliderValue = document.getElementById("slider").value;
     let box = document.getElementById("box");
