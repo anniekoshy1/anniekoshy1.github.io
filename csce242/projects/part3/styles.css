@@ -64,39 +64,52 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
+/* Remove max-width from the main element */
 main {
     padding: 40px;
+    margin: 0 auto;
+}
+
+/* Create a new container with max-width to retain layout */
+.content-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-section {
+/* Left-align h2 */
+.gear h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Gear item layout */
+.gear-item {
     margin-bottom: 40px;
 }
 
-.section-content {
+/* Layout for each gear content */
+.gear-content {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
-.section-content img {
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid #ccc;
+.gear-content p {
+    flex: 2;
 }
-/* Center-align image */
+
 .image-placeholder {
-    display: flex;
-    justify-content: center; 
-    margin: 20px 0; 
+    flex: 1;
+    text-align: center;
 }
 
 .image-placeholder img {
-    width: 800px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     border: 1px solid #ccc;
 }
+
 
 .goals-container {
     display: flex;
@@ -105,12 +118,12 @@ section {
 }
 /* Box around the goals list */
 .goals ul {
-    border: 2px solid #333; 
-    padding: 20px; 
-    margin: 20px 0; 
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    list-style-type: disc;
+    border: 2px solid #333; /* Adds a solid border around the list */
+    padding: 20px; /* Adds space inside the box */
+    margin: 20px 0; /* Adds space around the list */
+    border-radius: 10px; /* Optional: Rounds the corners of the box */
+    background-color: #f9f9f9; /* Optional: Adds a background color to the box */
+    list-style-type: disc; /* Keeps the bullet points */
 }
 .goals h2 {
     text-align: center;
@@ -171,3 +184,38 @@ section {
     height: 200px;
     border: 1px solid #ccc;
 }
+
+/* Flexbox layout for training section */
+.section-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0; /* Remove the gap between the image and text */
+}
+
+/* Image placeholder styling */
+.image-placeholder img {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+/* Text content styling */
+.text-content {
+    margin-left: -40px; /* Move the text content further closer to the image */
+    max-width: 600px;
+}
+
+.text-content h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+
