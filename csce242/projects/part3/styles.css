@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #333;
+    --border-color: #ccc;
+    --hover-bg-color: #ddd;
+    --goal-bg-color: #f9f9f9;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -76,40 +83,65 @@ main {
     margin: 0 auto;
 }
 
-/* Left-align h2 */
-.gear h2 {
-    text-align: left;
-    margin-bottom: 20px;
-}
+/* Gear and Equipment specific changes */
 
-/* Gear item layout */
+/* Flexbox layout for gear items */
 .gear-item {
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; /* Optional: Separate the items */
 }
 
-/* Layout for each gear content */
 .gear-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 20px;
+    align-items: flex-start;
 }
 
+/* Style for the text content */
 .gear-content p {
     flex: 2;
+    margin-right: 20px; /* Creates space between text and image */
+    text-align: left;
 }
 
-.image-placeholder {
-    flex: 1;
-    text-align: center;
-}
-
+/* Adjusting the size of the images to be smaller */
 .image-placeholder img {
-    width: 300px;
-    height: 200px;
+    width: 10px;  /* Smaller width to match the wireframe */
+    height: 10x;  /* Smaller height to match the wireframe */
     border: 1px solid #ccc;
 }
 
+/* Ensure the layout of the gear item with title above paragraph */
+.gear-item h3 {
+    margin-bottom: 10px;
+    text-align: left; /* Make sure the title is aligned to the left */
+}
+
+/* Adjusting the layout of the gear items to maintain spacing and structure */
+.gear-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Flexbox layout for gear items */
+.gear-item {
+    display: block; /* Stack elements vertically */
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; /* Optional: Separate the items */
+}
+
+/* Paragraph and image alignment */
+.gear-content p {
+    margin-right: 20px; /* Creates space between text and image */
+    text-align: left;
+    flex: 2;
+}
 
 .goals-container {
     display: flex;
@@ -152,38 +184,8 @@ main {
 .training-text {
     margin-top: 20px;
 }
-/* Left-align h2*/
-.gear h2 {
-    text-align: left;
-    margin-bottom: 20px;
-}
 
-.gear-item {
-    margin-bottom: 40px;
-}
 
-/* Layout for each gear content */
-.gear-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.gear-content p {
-    flex: 2;
-}
-
-.image-placeholder {
-    flex: 1;
-    text-align: center;
-}
-
-.image-placeholder img {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #ccc;
-}
 
 /* Flexbox layout for training section */
 .section-content {
@@ -202,7 +204,7 @@ main {
 
 /* Text content styling */
 .text-content {
-    margin-left: -40px; /* Move the text content further closer to the image */
+    margin-left: 260px; /* Move the text content further closer to the image */
     max-width: 600px;
 }
 
@@ -215,7 +217,96 @@ main {
     margin-bottom: 20px;
     text-align: left;
 }
+/* Recovery Page Specific Changes */
 
+/* Adjust the size of the images to match the wireframe */
+.recovery .image-placeholder img, 
+.injury-prevention .image-placeholder img {
+    width: 300px; /* Adjusted width to be smaller */
+    height: 200px; /* Adjusted height to be smaller */
+    border: 1px solid #ccc;
+}
 
+/* Align the image and text next to each other with less gap */
+.recovery .section-content, 
+.injury-prevention .section-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Space between image and text */
+}
 
+/* Styling for the text next to the image */
+.recovery .section-content div,
+.injury-prevention .section-content div {
+    max-width: 600px;
+    text-align: left; /* Ensure text is left aligned */
+}
 
+/* Recovery and Injury Prevention header styling */
+.recovery h2, 
+.injury-prevention h2 {
+    margin-bottom: 20px;
+    text-align: left; /* Ensure header is left aligned */
+}
+
+/* Spacing for multiple sections on the page */
+.recovery .section-content, 
+.injury-prevention .section-content {
+    margin-bottom: 40px; /* Add some space between sections */
+}
+/* Contact Us Page Specific Changes */
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the elements vertically on small screens */
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact image styling */
+.contact-image img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row; /* Align content side by side on larger screens */
+        gap: 40px;
+    }
+}
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Optional: Adjust margin for spacing around the image */
+}
+.image-placeholder img {
+    width: 50%; /* Image will take 50% of the container width */
+    height: auto; /* Maintain aspect ratio */
+}
