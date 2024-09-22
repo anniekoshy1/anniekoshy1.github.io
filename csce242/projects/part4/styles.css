@@ -65,7 +65,7 @@ nav ul li a:hover {
 .small-image {
     width: 175px;
     height: 200px;
-    object-fit: cover; /* Optional: ensures the image fills the space without distortion */
+    object-fit: cover; 
 }
 /* Horizontal line under the header */
 .line {
@@ -87,7 +87,6 @@ main {
     margin: 0 auto;
 }
 
-/* Gear and Equipment specific changes */
 
 /* Flexbox layout for gear items */
 .gear-item {
@@ -95,7 +94,7 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 0;
-    border-bottom: 1px solid #ccc; /* Optional: Separate the items */
+    border-bottom: 1px solid #ccc; 
 }
 
 .gear-content {
@@ -108,24 +107,22 @@ main {
 /* Style for the text content */
 .gear-content p {
     flex: 2;
-    margin-right: 20px; /* Creates space between text and image */
+    margin-right: 20px; 
     text-align: left;
 }
 
 /* Adjusting the size of the images to be smaller */
 .image-placeholder img {
-    width: 10px;  /* Smaller width to match the wireframe */
-    height: 10x;  /* Smaller height to match the wireframe */
+    width: 10px;  
+    height: 10x;  
     border: 1px solid #ccc;
 }
 
-/* Ensure the layout of the gear item with title above paragraph */
 .gear-item h3 {
     margin-bottom: 10px;
-    text-align: left; /* Make sure the title is aligned to the left */
+    text-align: left; 
 }
 
-/* Adjusting the layout of the gear items to maintain spacing and structure */
 .gear-content {
     display: flex;
     gap: 20px;
@@ -135,14 +132,14 @@ main {
 
 /* Flexbox layout for gear items */
 .gear-item {
-    display: block; /* Stack elements vertically */
+    display: block; 
     padding: 20px 0;
-    border-bottom: 1px solid #ccc; /* Optional: Separate the items */
+    border-bottom: 1px solid #ccc; 
 }
 
 /* Paragraph and image alignment */
 .gear-content p {
-    margin-right: 20px; /* Creates space between text and image */
+    margin-right: 20px; 
     text-align: left;
     flex: 2;
 }
@@ -154,12 +151,12 @@ main {
 }
 /* Box around the goals list */
 .goals ul {
-    border: 2px solid #333; /* Adds a solid border around the list */
-    padding: 20px; /* Adds space inside the box */
-    margin: 20px 0; /* Adds space around the list */
-    border-radius: 10px; /* Optional: Rounds the corners of the box */
-    background-color: #f9f9f9; /* Optional: Adds a background color to the box */
-    list-style-type: disc; /* Keeps the bullet points */
+    border: 2px solid #333; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    list-style-type: disc; 
 }
 .goals h2 {
     text-align: center;
@@ -195,7 +192,7 @@ main {
 .section-content {
     display: flex;
     align-items: flex-start;
-    gap: 0; /* Remove the gap between the image and text */
+    gap: 0; 
 }
 
 /* Image placeholder styling */
@@ -208,7 +205,7 @@ main {
 
 /* Text content styling */
 .text-content {
-    margin-left: 260px; /* Move the text content further closer to the image */
+    margin-left: 260px; 
     max-width: 600px;
 }
 
@@ -221,13 +218,10 @@ main {
     margin-bottom: 20px;
     text-align: left;
 }
-/* Recovery Page Specific Changes */
-
-/* Adjust the size of the images to match the wireframe */
 .recovery .image-placeholder img, 
 .injury-prevention .image-placeholder img {
-    width: 300px; /* Adjusted width to be smaller */
-    height: 200px; /* Adjusted height to be smaller */
+    width: 300px; 
+    height: 200px; 
     border: 1px solid #ccc;
 }
 
@@ -237,29 +231,28 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px; /* Space between image and text */
+    gap: 20px; 
 }
 
 /* Styling for the text next to the image */
 .recovery .section-content div,
 .injury-prevention .section-content div {
     max-width: 600px;
-    text-align: left; /* Ensure text is left aligned */
+    text-align: left; 
 }
 
 /* Recovery and Injury Prevention header styling */
 .recovery h2, 
 .injury-prevention h2 {
     margin-bottom: 20px;
-    text-align: left; /* Ensure header is left aligned */
+    text-align: left; 
 }
 
 /* Spacing for multiple sections on the page */
 .recovery .section-content, 
 .injury-prevention .section-content {
-    margin-bottom: 40px; /* Add some space between sections */
+    margin-bottom: 40px; 
 }
-/* Contact Us Page Specific Changes */
 .contact {
     text-align: center;
 }
@@ -273,7 +266,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack the elements vertically on small screens */
+    flex-direction: column; 
 }
 
 .contact-info {
@@ -301,18 +294,18 @@ main {
 
 @media (min-width: 768px) {
     .contact-content {
-        flex-direction: row; /* Align content side by side on larger screens */
+        flex-direction: row;
         gap: 40px;
     }
 }
 .image-placeholder {
     display: flex;
     justify-content: center;
-    margin: 20px 0; /* Optional: Adjust margin for spacing around the image */
+    margin: 20px 0; 
 }
 .image-placeholder img {
-    width: 50%; /* Image will take 50% of the container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 50%; 
+    height: auto; 
 }
 /* General Styles */
 * {
@@ -351,36 +344,36 @@ nav ul li a {
     padding: 10px 15px;
     border: 1px solid #333;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Adds smooth hover transition */
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: #ddd; /* Hover effect for desktop */
+    background-color: #ddd; 
 }
 
 /* Mobile View Styling */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack the items vertically */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
         padding: 10px;
-        background-color: #f1f1f1; /* Optional: background for navbar */
-        border-radius: 10px; /* Optional: rounded edges for nav */
+        background-color: #f1f1f1;
+        border-radius: 10px; 
     }
 
     nav ul li a {
-        display: block; /* Makes the links take up full width */
-        width: 100%; /* Full width buttons */
-        text-align: center; /* Center the text */
-        padding: 12px 0; /* Increase padding for better button-like appearance */
-        background-color: #333; /* Button background color */
-        color: #fff; /* Text color */
-        border: none; /* Remove borders */
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        background-color: #333; 
+        color: #fff;
+        border: none; 
     }
 
     nav ul li a:hover {
-        background-color: #555; /* Darker hover effect for mobile */
+        background-color: #555; 
     }
 }
 
@@ -409,7 +402,7 @@ nav ul li a:hover {
     height: 300px;
 }
 
-/* Media Query for Mobile (screen width 768px or less) */
+/* Media Query for Mobile */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -423,7 +416,6 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    /* Resize images for mobile */
     .logo-container img,
     .contact-image img {
         width: 150px;
@@ -435,7 +427,6 @@ nav ul li a:hover {
         height: auto;
     }
 
-    /* Adjust font size for headings on mobile */
     h1 {
         font-size: 2rem;
     }
@@ -445,7 +436,6 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    /* Adjust padding and layout for mobile */
     main {
         padding: 20px;
     }
@@ -474,5 +464,42 @@ nav ul li a:hover {
     .goals-container {
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nav-toggle {
+    display: none; 
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: block; 
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
     }
 }
