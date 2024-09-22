@@ -62,7 +62,11 @@ nav ul li a:hover {
     width: 100px;
     height: 100px;
 }
-
+.small-image {
+    width: 175px;
+    height: 200px;
+    object-fit: cover; /* Optional: ensures the image fills the space without distortion */
+}
 /* Horizontal line under the header */
 .line {
     width: 100%;
@@ -309,4 +313,166 @@ main {
 .image-placeholder img {
     width: 50%; /* Image will take 50% of the container width */
     height: auto; /* Maintain aspect ratio */
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+/* General Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Adds smooth hover transition */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Hover effect for desktop */
+}
+
+/* Mobile View Styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f1f1f1; /* Optional: background for navbar */
+        border-radius: 10px; /* Optional: rounded edges for nav */
+    }
+
+    nav ul li a {
+        display: block; /* Makes the links take up full width */
+        width: 100%; /* Full width buttons */
+        text-align: center; /* Center the text */
+        padding: 12px 0; /* Increase padding for better button-like appearance */
+        background-color: #333; /* Button background color */
+        color: #fff; /* Text color */
+        border: none; /* Remove borders */
+    }
+
+    nav ul li a:hover {
+        background-color: #555; /* Darker hover effect for mobile */
+    }
+}
+
+/* Logo Styling */
+.logo-container {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Line below header */
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 10px 0;
+}
+
+/* Contact Image */
+.contact-image img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Media Query for Mobile (screen width 768px or less) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Resize images for mobile */
+    .logo-container img,
+    .contact-image img {
+        width: 150px;
+        height: auto;
+    }
+
+    .image-placeholder img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust font size for headings on mobile */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* Adjust padding and layout for mobile */
+    main {
+        padding: 20px;
+    }
+
+    .content-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .gear-item,
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gear-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        margin-left: 0;
+    }
+
+    .goals-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
