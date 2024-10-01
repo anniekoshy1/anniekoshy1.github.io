@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 5%;
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+    padding: 10px 0 20px;
+    color: lightblue;
+}
+
+.subtitle {
+    font-size: 25px;
+    color: lightblue;
+    margin: 0;
+}
+
+.pink-container {
+    background-color: lightcoral; 
+    padding: 20px;
+    width: 330px;
+    padding-bottom: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 100px;
+    margin-right: 10px;
+    border: none;
+    color: black;
+}
+
+.input-container p {
+    display: inline; 
+    margin-right: 10px; 
+    color: white; 
+    vertical-align: middle;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: white;
+    color: lightblue;
+    border: none;
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+.error-message {
+    color: black;
+    margin-top: 10px;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px; 
+    left: 0;
+    right: 0;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.stars-box {
+    width: 320px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid white;
+    overflow: hidden; 
+}
+
+.star {
+    position: absolute;
+    color: yellow; 
+    font-size: 24px; 
+    line-height: 1;
+    text-align: center; 
+}
+
+.star::before {
+    content: '\2605'; /* Found how to do star on https://hydrogenaud.io/index.php/topic,37035.0.html */
+    font-size: inherit; 
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.footer {
+    color: lightblue;
+    margin-top: auto;
+    text-align: center;
+    margin-top: -60px;
+}
+
+@media (min-width: 1468px) {
+    .footer {
+        margin-top: -120px;
+    }
+}

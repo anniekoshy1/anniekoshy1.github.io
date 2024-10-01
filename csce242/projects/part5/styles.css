@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #333;
+    --border-color: #ccc;
+    --hover-bg-color: #ddd;
+    --goal-bg-color: #f9f9f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+/* Center align the h1 header */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+/* Right-align the navigation bar and align links to the bottom */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Left-align the logo under the navigation */
+.logo-container {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+}
+.small-image {
+    width: 175px;
+    height: 200px;
+    object-fit: cover; 
+}
+/* Horizontal line under the header */
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 10px 0;
+}
+
+/* Remove max-width from the main element */
+main {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* Create a new container with max-width to retain layout */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Flexbox layout for gear items */
+.gear-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; 
+}
+
+.gear-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Style for the text content */
+.gear-content p {
+    flex: 2;
+    margin-right: 20px; 
+    text-align: left;
+}
+
+/* Adjusting the size of the images to be smaller */
+.image-placeholder img {
+    width: 10px;  
+    height: 10x;  
+    border: 1px solid #ccc;
+}
+
+.gear-item h3 {
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.gear-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Flexbox layout for gear items */
+.gear-item {
+    display: block; 
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; 
+}
+
+/* Paragraph and image alignment */
+.gear-content p {
+    margin-right: 20px; 
+    text-align: left;
+    flex: 2;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* Box around the goals list */
+.goals ul {
+    border: 2px solid #333; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    list-style-type: disc; 
+}
+.goals h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Align header and image next to each other */
+.training-header-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.training-header-content h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Make the image longer */
+.image-placeholder img {
+    width: 900px; 
+    height: 600px;
+    border: 1px solid #ccc;
+}
+/* paragraphs below the image and header */
+.training-text {
+    margin-top: 20px;
+}
+
+
+
+/* Flexbox layout for training section */
+.section-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0; 
+}
+
+/* Image placeholder styling */
+.image-placeholder img {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+/* Text content styling */
+.text-content {
+    margin-left: 260px; 
+    max-width: 600px;
+}
+
+.text-content h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.recovery .image-placeholder img, 
+.injury-prevention .image-placeholder img {
+    width: 300px; 
+    height: 200px; 
+    border: 1px solid #ccc;
+}
+
+/* Align the image and text next to each other with less gap */
+.recovery .section-content, 
+.injury-prevention .section-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+/* Styling for the text next to the image */
+.recovery .section-content div,
+.injury-prevention .section-content div {
+    max-width: 600px;
+    text-align: left; 
+}
+
+/* Recovery and Injury Prevention header styling */
+.recovery h2, 
+.injury-prevention h2 {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+/* Spacing for multiple sections on the page */
+.recovery .section-content, 
+.injury-prevention .section-content {
+    margin-bottom: 40px; 
+}
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact image styling */
+.contact-image img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; 
+}
+.image-placeholder img {
+    width: 50%; 
+    height: auto; 
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+/* General Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #ddd; 
+}
+
+/* Mobile View Styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border-radius: 10px; 
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        background-color: #333; 
+        color: #fff;
+        border: none; 
+    }
+
+    nav ul li a:hover {
+        background-color: #555; 
+    }
+}
+
+/* Logo Styling */
+.logo-container {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Line below header */
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 10px 0;
+}
+
+/* Contact Image */
+.contact-image img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container img,
+    .contact-image img {
+        width: 150px;
+        height: auto;
+    }
+
+    .image-placeholder img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .content-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .gear-item,
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gear-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        margin-left: 0;
+    }
+
+    .goals-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nav-toggle {
+    display: none; 
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: block; 
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+    }
+}
+.gear-image {
+    width: 300px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border: 1px solid #ccc !important;
+}
