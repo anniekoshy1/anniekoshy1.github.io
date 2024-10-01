@@ -1,4 +1,4 @@
-document.getElementById('draw-button').addEventListener('click', () => {
+document.getElementById('button').addEventListener('click', () => {
     const input = document.getElementById('star-input');
     const numberOfStars = parseInt(input.value);
     const errorMessage = document.getElementById('error-message');

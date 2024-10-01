@@ -34,7 +34,7 @@ body, html {
     margin: 0;
 }
 
-.pink-container {
+.stars-container {
     background-color: lightcoral; 
     padding: 20px;
     width: 330px;
@@ -43,7 +43,7 @@ body, html {
     margin: 0 auto;
 }
 
-.input-container {
+.input {
     margin: 20px 0;
 }
 
@@ -55,7 +55,7 @@ input {
     color: black;
 }
 
-.input-container p {
+.input p {
     display: inline; 
     margin-right: 10px; 
     color: white; 
