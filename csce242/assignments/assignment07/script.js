@@ -10,7 +10,7 @@ document.getElementById('button').addEventListener('click', () => {
     messageDisplay.textContent = ''; 
 
     if (numberOfStars <= 0 || isNaN(numberOfStars)) {
-        errorMessage.textContent = 'Invalid Input, # greater than 0';
+        errorMessage.textContent = 'Invalid Input: number greater than 0';
         return;
     }
 
