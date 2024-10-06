@@ -33,7 +33,6 @@ class Bird {
     }
 }
 
-// Array of Bird objects
 const birds = [
     new Bird('Hummingbird', '2.5 inches', '3-5 years', 'Nectar (Sugar water)', 'Trees', "They're nicknamed 'Hummers'", 'assignments/assignment09/images/hummingbird.jpg'),
     new Bird('Blue Jay', '9-12 inches', '7 years', 'Seeds, insects', 'Woodlands', 'Known for their intelligence', 'assignments/assignment09/images/bluejay.jpg'),
@@ -41,7 +40,6 @@ const birds = [
     new Bird('Robin', '9-11 inches', '2 years', 'Insects, berries', 'Forests', 'They’re a sign of spring', 'assignments/assignment09/images/robin.jpg')
 ];
 
-// Function to display birds on the DOM
 function displayBirds() {
     const container = document.getElementById('bird-container');
     birds.forEach(bird => {
@@ -49,7 +47,6 @@ function displayBirds() {
     });
 }
 
-// Modal functions
 function showModal(name) {
     const bird = birds.find(b => b.name === name);
     const modal = document.getElementById('myModal');
@@ -62,5 +59,4 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// Call display function on page load
 window.onload = displayBirds;
