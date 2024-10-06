@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run Time - Training</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run Time - Training</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <img src="images/logo.jpg" alt="Running logo" class="logo">
-            <h1>Run Time</h1>
-        </div>
-        <div class="line"></div>
-        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="gear.html">Gear & Equipment</a></li>
-                <li><a href="recovery.html">Recovery & Injury Prevention</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="training">
-            <div class="section-content">
-                <div class="image-placeholder">
-                    <img src="images/train.jpg" alt="Training placeholder image">
-                </div>
-                <div class="text-content">
-                    <h2>Tips for Training</h2>
-                    <p>Training is essential for success, whether you're preparing for a 5K or a marathon. A well-structured training plan is key to building endurance, strength, and speed over time...</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <img src="run-icon.png" alt="Run Icon" width="40px">
+      <span>Run Time</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gear.html">Gear & Equipment</a></li>
+      <li><a href="recovery.html">Recovery & Injury Prevention</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <!-- Training Section -->
+  <section class="training-section">
+    <h2>Training Plans for Every Runner</h2>
+    <article class="training-plan">
+      <h3>Beginner's 5K Plan</h3>
+      <p>Get started with this 6-week plan designed for new runners.</p>
+    </article>
+    <article class="training-plan">
+      <h3>10K Training Plan</h3>
+      <p>A great program for intermediate runners looking to improve their 10K time.</p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Run Time. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
