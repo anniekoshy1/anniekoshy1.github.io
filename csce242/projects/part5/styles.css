@@ -441,3 +441,423 @@ nav {
       color: white;
     }
   }  
+  /* About Us Section Styling */
+.about-section {
+  background-color: #e0f7fa; /* Light blue background to match the aesthetic */
+  padding: 50px 20px; /* Generous padding for a spacious look */
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem; /* Larger font size for the title */
+  color: #0044cc; /* Matching the color palette */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.about-section p {
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  color: #333; /* Neutral text color */
+  max-width: 800px; /* Limit the width of the text for readability */
+  margin: 0 auto; /* Center the paragraph */
+  line-height: 1.8; /* Increase line height for easier reading */
+  background-color: #fff; /* Background for the text area */
+  padding: 20px; /* Padding inside the text box */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .about-section h2 {
+      font-size: 2rem; /* Slightly smaller font size on mobile */
+  }
+
+  .about-section p {
+      font-size: 1rem; /* Adjust text size for small screens */
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+/* Goals Section with Images Styling */
+.goals-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.goals-content {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+.goals-content h2 {
+  font-size: 2.5rem;
+  color: #0044cc;
+  margin-bottom: 20px;
+}
+
+.goals-content ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.goals-content li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.goal-image {
+  flex-basis: 25%;
+  margin: 0 20px;
+}
+
+.goal-image img {
+  width: 100%;
+  height: 300px; /* Set a fixed height for taller images */
+  object-fit: cover; /* Ensures the image scales and crops without stretching */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .goals-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .goal-image {
+      margin-bottom: 20px;
+  }
+
+  .goals-content ul {
+      padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .goal-image img {
+      height: 200px; /* Adjust the height for smaller screens */
+  }
+}
+/* Goals Section with Adjusted Image Positions */
+.goal-image:first-child {
+  margin-left: -40px; /* Scoot the first image more to the left */
+}
+
+.goal-image:last-child {
+  margin-right: -40px; /* Scoot the second image more to the right */
+}
+
+.goal-image img {
+  width: 100%;
+  height: 300px; /* Set a fixed height for taller images */
+  object-fit: cover; /* Ensure the image scales properly */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .goal-image:first-child, .goal-image:last-child {
+      margin-left: 0;
+      margin-right: 0; /* Reset margins for small screens */
+  }
+
+  .goal-image img {
+      height: 200px; /* Adjust height for smaller screens */
+  }
+}
+/* Training Section */
+.training-section {
+  padding: 50px 20px;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.training-section h2 {
+  font-size: 2.5rem;
+  color: #0044cc;
+  margin-bottom: 20px;
+}
+
+.training-plan h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.training-plan p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Tips for Training Section */
+.tips-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.tips-section h2 {
+  font-size: 2.5rem;
+  color: #0044cc;
+  margin-bottom: 30px;
+}
+
+.tips-section p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .training-section h2, .tips-section h2 {
+      font-size: 2rem;
+  }
+
+  .training-plan h3, .training-plan p, .tips-section p {
+      font-size: 1rem;
+  }
+}
+/* Training Image Styling */
+.training-image {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.training-image img {
+  max-width: 70%; /* Adjust this value to make the image smaller */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Recovery Section */
+.recovery-section, .injury-prevention-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  text-align: center;
+}
+
+.recovery-section h2, .injury-prevention-section h2 {
+  font-size: 2.5rem;
+  color: #0044cc; /* Matching the brand color */
+  margin-bottom: 20px;
+}
+
+.recovery-section p, .injury-prevention-section p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recovery-section h2, .injury-prevention-section h2 {
+      font-size: 2rem;
+  }
+
+  .recovery-section p, .injury-prevention-section p {
+      font-size: 1rem;
+  }
+}
+/* Recovery and Injury Prevention Section Styling */
+.recovery-content, .prevention-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 30px;
+}
+
+.recovery-text, .prevention-text {
+  flex-basis: 60%;
+  padding-right: 20px;
+}
+
+.recovery-image, .prevention-image {
+  flex-basis: 35%;
+}
+
+.recovery-image img, .prevention-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .recovery-content, .prevention-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .recovery-text, .prevention-text {
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .recovery-image, .prevention-image {
+      width: 100%;
+      margin: 0 auto;
+  }
+}
+.recovery-image img {
+  max-width: 80%; /* Adjust this value to make the first image smaller */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for aesthetics */
+}
+
+.prevention-image img {
+  max-width: 100%; /* Keep the second image at its default size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px;
+}
+/* Contact Section Styling */
+.contact-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #0044cc;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003399;
+}
+
+/* Footer */
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-section h2 {
+      font-size: 2rem;
+  }
+
+  .contact-section p, label {
+      font-size: 1rem;
+  }
+
+  form {
+      padding: 15px;
+  }
+
+  button {
+      font-size: 1rem;
+  }
+}
+/* Contact Image Styling */
+.contact-image {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
