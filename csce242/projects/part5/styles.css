@@ -861,3 +861,258 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Container to align boxes in a row */
+.training-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+  justify-content: space-between; /* Adds space between boxes */
+  padding: 50px 20px;
+}
+
+.training-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  gap: 20px; /* Space between cards */
+}
+
+.training-card {
+  background-color: #e0f7fa; /* Light blue */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Two cards per row */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .training-card {
+      width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* Ensure the header is centered */
+.training-section h2 {
+  font-size: 2.5rem;
+  text-align: center !important; /* Forces the centering */
+  color: #0044cc; 
+  margin-bottom: 40px; /* Adds space below */
+  display: block; /* Ensures the element behaves as a block */
+  width: 100%; /* Makes sure it takes full width of the parent */
+}
+.training-card img {
+  width: 300px; /* Set the width to your desired size */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+/* Section background color (grey) */
+.training-section {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 50px 20px; /* Add padding to create space around the content */
+}
+
+/* Individual boxes (blue) */
+.training-card {
+  background-color: #e0f7fa; /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Two cards per row */
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide the navigation links on small screens */
+      flex-direction: column;
+      background-color: #333; /* Background color for mobile menu */
+      position: absolute;
+      top: 60px; /* Positioning below the navbar */
+      left: 0;
+      width: 100%; /* Full width */
+      padding: 0;
+      z-index: 1;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show the nav links when active (after clicking the burger) */
+  }
+
+  .nav-links li {
+      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid #fff; /* Optional: adds dividers between menu items */
+  }
+
+  .nav-links li a {
+      color: white; /* White text */
+      padding: 15px;
+      display: block;
+  }
+
+  .burger {
+      display: block; /* Show the burger icon on mobile */
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+  }
+
+  .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+  }
+}
+/* Default logo display */
+.logo {
+  display: flex; /* Show the logo by default */
+  align-items: center;
+}
+/* Default display for logo on larger screens */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide the logo on small screens */
+@media (max-width: 768px) {
+  .logo {
+      display: none !important; /* Force hide the logo on small screens */
+  }
+}
+/* Default (desktop) view */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #333;
+  position: relative; /* Ensure navbar is not fixed */
+  z-index: 10; /* Ensure it stays above content if necessary */
+  width: 100%;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  nav {
+      padding: 10px 20px; /* Reduce padding for smaller screens */
+      height: auto;
+      position: static; /* Ensure it's not fixed and scrolls with the content */
+  }
+
+  .logo img {
+      width: 30px; /* Make the logo smaller */
+  }
+
+  .burger {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+  }
+
+  .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: relative;
+      top: 0; /* No overlapping */
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1; /* Ensure the dropdown menu sits above content */
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      padding: 10px 0;
+      border-bottom: 1px solid #fff;
+  }
+
+  .nav-links li a {
+      color: white;
+      padding: 10px;
+      display: block;
+  }
+}
+
+/* Ensure the content starts below the navbar */
+body {
+  padding-top: 70px; /* Add padding to push content down */
+}
+
+/* Optional styling to reduce spacing between header and content */
+header {
+  margin-top: 20px;
+}
+/* Desktop View (Default) */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Padding can be adjusted for space around the content */
+  background-color: #333;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Ensure it sticks to the top */
+  width: 100%; /* Full-width navbar */
+  z-index: 10; /* Keeps it above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for visual separation */
+}
+
+body {
+  margin: 0;
+  padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  nav {
+      position: static; /* Ensure navbar is not fixed on small screens */
+      padding: 10px 20px;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .burger {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+  }
+
+  .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+  }
+}
