@@ -1,8 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fef3e2;
     text-align: center;
-    margin: 0;
     padding: 20px;
 }
 
@@ -13,10 +18,10 @@ h1 {
 
 .ice-cream-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 10px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .ice-cream {
