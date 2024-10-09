@@ -1,18 +1,8 @@
 async function fetchIceCreams() {
-    try {
-        const response = await fetch('https://portiaportia.github.io/json/ice-creams.json');
-        const data = await response.json();
-        
-        console.log('Fetched data:', data);
-
-        if (Array.isArray(data)) {
-            displayIceCreams(data); 
-        } else {
-            console.error('Data is not an array');
-        }
-    } catch (error) {
-        console.error('Error fetching ice cream data:', error);
-    }
+    const response = await fetch('https://portiaportia.github.io/json/ice-creams.json');
+    const data = await response.json();
+    
+    displayIceCreams(data);
 }
 
 function displayIceCreams(iceCreams) {
