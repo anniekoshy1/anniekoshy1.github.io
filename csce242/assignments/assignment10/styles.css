@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef3e2;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff5f6d;
+    margin-bottom: 20px;
+}
+
+.ice-cream-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ice-cream {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ice-cream img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ice-cream .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.ice-cream:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    margin-top: 20px;
+    color: #8d8d8d;
+    font-size: 0.9em;
+}
