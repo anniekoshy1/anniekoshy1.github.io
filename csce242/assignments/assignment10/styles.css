@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffc46c;
+    background-color: #fef3e2;
     text-align: center;
     padding: 20px;
 }
@@ -53,7 +53,7 @@ h1 {
 }
 
 .ice-cream:hover .overlay {
-    opacity: 1;
+    opacity: 1; 
 }
 
 footer {
