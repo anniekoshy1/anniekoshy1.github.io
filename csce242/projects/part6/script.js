@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
           .then(response => response.json())
           .then(data => {
             const dynamicGearContainer = document.getElementById('dynamic-gear');
-            dynamicGearContainer.innerHTML = ''; // Clear previous content if any
+            dynamicGearContainer.innerHTML = '';
             
             data.forEach(item => {
               const gearItem = `
@@ -34,8 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
           .catch(error => console.error('Error fetching gear data:', error));
     }    
   
-    // Load all JSON data when the page loads
-    loadGear('shoes.json'); // Load shoes by default on page load
-    loadGear('accessories.json');
-    loadGear('watches.json');
+    loadGear('shoes.json'); 
   });  
