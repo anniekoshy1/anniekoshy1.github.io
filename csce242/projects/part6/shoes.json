@@ -1,0 +1,54 @@
+[
+  {
+    "_id": 1,
+    "name": "Hoka One One Clifton 8",
+    "img_name": "images/hoka.jpg",
+    "brand": "Hoka",
+    "price": "$140",
+    "rating": 4.7,
+    "features": [
+      "Extra cushioning for long distances",
+      "Lightweight and breathable",
+      "Supportive midsole"
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Brooks Ghost 14",
+    "img_name": "images/brooks.jpg",
+    "brand": "Brooks",
+    "price": "$130",
+    "rating": 4.8,
+    "features": [
+      "Soft cushioning",
+      "Seamless transitions",
+      "Perfect for daily running"
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "New Balance Fresh Foam X More V4",
+    "img_name": "images/fresh-foam-v4.jpg",
+    "brand": "New Balance",
+    "price": "$150",
+    "rating": 4.7,
+    "features": [
+      "Maximum cushioning for comfort",
+      "Durable rubber outsole for traction",
+      "Breathable engineered mesh upper"
+    ]
+  },
+  {
+    "_id": 4,
+    "name": "Nike Zoom Rival Track Spikes",
+    "img_name": "images/spikes.jpg",
+    "brand": "Nike",
+    "price": "$70",
+    "rating": 4.6,
+    "features": [
+      "Lightweight design for speed",
+      "Durable spike plate",
+      "Breathable upper mesh"
+    ]
+  }
+]

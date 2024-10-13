@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
   <!-- Nav Bar -->
   <nav>
     <div class="logo">
@@ -31,10 +30,19 @@
   <!-- Gear Section -->
   <section class="gear-section">
     <h2>Recommended Gear & Equipment</h2>
+    
+    <!-- Category Buttons to Switch Between Gear Types -->
+    <div class="categories">
+      <button id="shoesBtn">Shoes</button>
+      <button id="clothingBtn">Clothing</button>
+      <button id="watchesBtn">Watches</button>
+    </div>
+
+    <!-- Static Content -->
     <div class="gear-container">
       <div class="gear-item">
         <img src="images/shoe.jpg" alt="Running Shoes">
-        <h3><a href="sneaker.html">Sneakers</a></h3>
+        <h3>Sneakers</h3>
         <p>When it comes to running, the right pair of shoes can make all the difference. Whether you're just starting out or logging miles as an experienced runner, investing in quality running shoes is essential for comfort, performance, and injury prevention. Different runners have different needs, so it's important to consider factors like cushioning, stability, and fit when choosing your shoes. From lightweight sneakers built for speed to more supportive options designed for long-distance comfort, finding the right pair will help you run your best while keeping your feet healthy. Remember, your shoes are your most important gear—take the time to choose wisely!</p>
       </div>
       <div class="gear-item">
@@ -47,40 +55,18 @@
         <h3>Watches</h3>
         <p>Tracking your runs with a reliable watch can take your training to the next level. GPS running watches provide real-time data on distance, pace, and elevation, giving you a clear picture of your performance on every run. Advanced models also monitor your heart rate, recovery time, and even offer personalized training plans based on your fitness goals. Whether you're aiming to improve your speed, increase your mileage, or simply keep track of your progress, a good running watch can help you stay on track and motivated. It’s a powerful tool for runners of all levels, offering valuable insights to enhance your training and reach your goals.</p>
       </div>
-      <div class="gear-item">
-        <img src="images/watch.jpg" alt="Fitness Tracker">
-        <h3>Foam Rollers</h3>
-        <p>Tracking your runs with a reliable watch can take your training to the next level. GPS running watches provide real-time data on distance, pace, and elevation, giving you a clear picture of your performance on every run. Advanced models also monitor your heart rate, recovery time, and even offer personalized training plans based on your fitness goals. Whether you're aiming to improve your speed, increase your mileage, or simply keep track of your progress, a good running watch can help you stay on track and motivated. It’s a powerful tool for runners of all levels, offering valuable insights to enhance your training and reach your goals.</p>
-      </div>
-      <div class="gear-item">
-        <img src="images/watch.jpg" alt="Fitness Tracker">
-        <h3>Water Bottle</h3>
-        <p>Tracking your runs with a reliable watch can take your training to the next level. GPS running watches provide real-time data on distance, pace, and elevation, giving you a clear picture of your performance on every run. Advanced models also monitor your heart rate, recovery time, and even offer personalized training plans based on your fitness goals. Whether you're aiming to improve your speed, increase your mileage, or simply keep track of your progress, a good running watch can help you stay on track and motivated. It’s a powerful tool for runners of all levels, offering valuable insights to enhance your training and reach your goals.</p>
-      </div>
-      <div class="gear-item">
-        <img src="images/watch.jpg" alt="Fitness Tracker">
-        <h3>Sunglasses</h3>
-        <p>Tracking your runs with a reliable watch can take your training to the next level. GPS running watches provide real-time data on distance, pace, and elevation, giving you a clear picture of your performance on every run. Advanced models also monitor your heart rate, recovery time, and even offer personalized training plans based on your fitness goals. Whether you're aiming to improve your speed, increase your mileage, or simply keep track of your progress, a good running watch can help you stay on track and motivated. It’s a powerful tool for runners of all levels, offering valuable insights to enhance your training and reach your goals.</p>
-      </div>
-      <div class="gear-item">
-        <img src="images/watch.jpg" alt="Fitness Tracker">
-        <h3>Vest</h3>
-        <p>Tracking your runs with a reliable watch can take your training to the next level. GPS running watches provide real-time data on distance, pace, and elevation, giving you a clear picture of your performance on every run. Advanced models also monitor your heart rate, recovery time, and even offer personalized training plans based on your fitness goals. Whether you're aiming to improve your speed, increase your mileage, or simply keep track of your progress, a good running watch can help you stay on track and motivated. It’s a powerful tool for runners of all levels, offering valuable insights to enhance your training and reach your goals.</p>
-      </div>
-      <div class="gear-item">
-        <img src="images/watch.jpg" alt="Fitness Tracker">
-        <h3>Lacrosse Ball</h3>
-        <p>Tracking your runs with a reliable watch can take your training to the next level. GPS running watches provide real-time data on distance, pace, and elevation, giving you a clear picture of your performance on every run. Advanced models also monitor your heart rate, recovery time, and even offer personalized training plans based on your fitness goals. Whether you're aiming to improve your speed, increase your mileage, or simply keep track of your progress, a good running watch can help you stay on track and motivated. It’s a powerful tool for runners of all levels, offering valuable insights to enhance your training and reach your goals.</p>
-      </div>
     </div>
-  </section>
 
+    <!-- Container for dynamically loaded gear -->
+    <div class="gear-container" id="dynamic-gear"></div>
+  </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2024 Run Time. All rights reserved.</p>
   </footer>
 
+  <!-- Link to external script.js file -->
   <script src="script.js"></script>
 </body>
 </html>
