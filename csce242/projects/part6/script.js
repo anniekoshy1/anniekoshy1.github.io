@@ -34,20 +34,7 @@ function loadGear(jsonFile) {
       .catch(error => console.error('Error fetching gear data:', error));
 }
 
-// Add event listeners to category buttons
-document.getElementById('shoesBtn').addEventListener('click', function() {
-  loadGear('shoes.json'); // Load the shoes JSON file when clicked
-});
-
-document.getElementById('clothingBtn').addEventListener('click', function() {
-  loadGear('clothing.json'); // Load the clothing JSON file when clicked
-});
-
-document.getElementById('watchesBtn').addEventListener('click', function() {
-  loadGear('watches.json'); // Load the watches JSON file when clicked
-});
-
-// Optionally, load default gear when the page first loads
+// Load all JSON data when the page loads
 document.addEventListener('DOMContentLoaded', function() {
   loadGear('shoes.json'); // Load shoes by default on page load
 });
