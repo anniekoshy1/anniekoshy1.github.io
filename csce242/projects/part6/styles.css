@@ -1110,31 +1110,33 @@ color: #0044cc;
 }
 .gear-card {
   display: flex;
-  background-color: #f9f9f9;
+  flex-direction: column;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
+  max-width: 300px;
 }
 
 .gear-image {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-right: 20px;
+  margin-bottom: 15px;
 }
 
 .gear-details {
-  flex-grow: 1;
+  text-align: center;
 }
 
 .gear-details h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
+  margin: 10px 0;
 }
 
-.gear-details ul {
-  list-style: none;
-  padding: 0;
+.gear-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }

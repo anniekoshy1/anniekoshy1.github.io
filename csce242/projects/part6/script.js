@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
   
-    // Function to fetch and display dynamic gear data from JSON
     function loadGear(jsonFile) {
         fetch(jsonFile)
           .then(response => response.json())
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
           })
           .catch(error => console.error('Error fetching gear data:', error));
-    }
+    }    
   
     // Load all JSON data when the page loads
     loadGear('shoes.json'); // Load shoes by default on page load
