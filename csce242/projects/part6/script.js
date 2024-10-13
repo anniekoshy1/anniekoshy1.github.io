@@ -4,24 +4,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const sneakersHeader = document.getElementById('sneakersHeader');
     const dynamicGearContainer = document.getElementById('dynamic-gear');
 
-    // Initially hide the gear container
+    
     dynamicGearContainer.style.display = 'none';
 
-    // Function to fetch and display shoes in one card from JSON
+    
     function loadShoesAsOneCard(jsonFile) {
         fetch(jsonFile)
           .then(response => response.json())
           .then(data => {
-            dynamicGearContainer.innerHTML = ''; // Clear previous content
+            dynamicGearContainer.innerHTML = ''; 
             
-            // Create a single card for all shoes
+          
             let gearItem = `
               <div class="gear-card">
                 <h3>Sneakers Collection</h3>
                 <div class="gear-details">
             `;
 
-            // Loop through the shoes data and add it to the card
+           
             data.forEach(item => {
               gearItem += `
                 <div class="gear-shoe">
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
             gearItem += `</div></div>`;
             dynamicGearContainer.innerHTML = gearItem;
 
-            // Show the card when clicked
+            
             dynamicGearContainer.style.display = 'block';
           })
           .catch(error => console.error('Error fetching shoe data:', error));
     }
   
-    // Add event listener to the Sneakers header
+    
     sneakersHeader.addEventListener('click', function() {
-      loadShoesAsOneCard('shoes.json'); // Load shoes as one card when the header is clicked
+      loadShoesAsOneCard('shoes.json'); 
     });
 });
