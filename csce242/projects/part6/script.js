@@ -6,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
   
+    // Function to fetch and display dynamic gear data from JSON
     function loadGear(jsonFile) {
         fetch(jsonFile)
           .then(response => response.json())
           .then(data => {
             const dynamicGearContainer = document.getElementById('dynamic-gear');
-            dynamicGearContainer.innerHTML = '';
+            dynamicGearContainer.innerHTML = ''; // Clear previous content if any
             
             data.forEach(item => {
               const gearItem = `
@@ -32,7 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
           })
           .catch(error => console.error('Error fetching gear data:', error));
-    }    
+    }
   
-    loadGear('shoes.json'); 
+    // Add an event listener to the Sneakers header
+    document.getElementById('sneakersHeader').addEventListener('click', function() {
+      loadGear('shoes.json'); // Load shoes.json when the "Sneakers" header is clicked
+    });
   });  
