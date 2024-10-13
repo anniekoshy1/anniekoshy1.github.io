@@ -6,37 +6,48 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
   
-    // Function to fetch and display dynamic gear data from JSON
-    function loadGear(jsonFile) {
+    // Function to fetch and display shoes in one card from JSON
+    function loadShoesAsOneCard(jsonFile) {
         fetch(jsonFile)
           .then(response => response.json())
           .then(data => {
             const dynamicGearContainer = document.getElementById('dynamic-gear');
-            dynamicGearContainer.innerHTML = ''; // Clear previous content if any
+            dynamicGearContainer.innerHTML = ''; // Clear previous content
             
+            // Create a single card for all shoes
+            let gearItem = `
+              <div class="gear-card">
+                <h3>Sneakers Collection</h3>
+                <div class="gear-details">
+                  <ul>
+            `;
+
+            // Loop through the shoes data and add it to the card
             data.forEach(item => {
-              const gearItem = `
-                <div class="gear-card">
+              gearItem += `
+                <li>
                   <img src="${item.img_name}" alt="${item.name}" class="gear-image">
-                  <div class="gear-details">
-                    <h3>${item.name}</h3>
-                    <p><strong>Brand:</strong> ${item.brand}</p>
-                    <p><strong>Price:</strong> ${item.price}</p>
-                    <p><strong>Rating:</strong> ${item.rating}</p>
-                    <ul>
-                      ${item.features.map(feature => `<li>${feature}</li>`).join('')}
-                    </ul>
-                  </div>
-                </div>
+                  <p><strong>${item.name}</strong></p>
+                  <p><strong>Brand:</strong> ${item.brand}</p>
+                  <p><strong>Price:</strong> ${item.price}</p>
+                  <p><strong>Rating:</strong> ${item.rating}</p>
+                  <ul>
+                    ${item.features.map(feature => `<li>${feature}</li>`).join('')}
+                  </ul>
+                </li>
               `;
-              dynamicGearContainer.innerHTML += gearItem;
             });
+
+            gearItem += `</ul></div></div>`;
+
+            // Insert the single card into the dynamic-gear container
+            dynamicGearContainer.innerHTML = gearItem;
           })
-          .catch(error => console.error('Error fetching gear data:', error));
+          .catch(error => console.error('Error fetching shoe data:', error));
     }
   
-    // Add an event listener to the Sneakers header
+    // Add event listener to the Sneakers header
     document.getElementById('sneakersHeader').addEventListener('click', function() {
-      loadGear('shoes.json'); // Load shoes.json when the "Sneakers" header is clicked
+      loadShoesAsOneCard('shoes.json'); // Load shoes as one card when the header is clicked
     });
-  });  
+});
