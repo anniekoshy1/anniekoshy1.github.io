@@ -15,15 +15,17 @@ function loadGear(jsonFile) {
         
         data.forEach(item => {
           const gearItem = `
-            <div class="gear-item">
-              <img src="${item.img_name}" alt="${item.name}">
-              <h3>${item.name}</h3>
-              <p><strong>Brand:</strong> ${item.brand}</p>
-              <p><strong>Price:</strong> ${item.price}</p>
-              <p><strong>Rating:</strong> ${item.rating}</p>
-              <ul>
-                ${item.features.map(feature => `<li>${feature}</li>`).join('')}
-              </ul>
+            <div class="gear-card">
+              <img src="${item.img_name}" alt="${item.name}" class="gear-image">
+              <div class="gear-details">
+                <h3>${item.name}</h3>
+                <p><strong>Brand:</strong> ${item.brand}</p>
+                <p><strong>Price:</strong> ${item.price}</p>
+                <p><strong>Rating:</strong> ${item.rating}</p>
+                <ul>
+                  ${item.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+              </div>
             </div>
           `;
           dynamicGearContainer.innerHTML += gearItem;
