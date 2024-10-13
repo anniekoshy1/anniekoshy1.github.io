@@ -1140,3 +1140,6 @@ color: #0044cc;
   justify-content: center;
   gap: 20px;
 }
+#dynamic-gear {
+  display: none;
+}
