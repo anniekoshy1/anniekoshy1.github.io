@@ -36,4 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Load all JSON data when the page loads
     loadGear('shoes.json'); // Load shoes by default on page load
+    loadGear('accessories.json');
+    loadGear('watches.json');
   });  
