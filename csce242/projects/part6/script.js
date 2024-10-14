@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     const sneakersHeader = document.getElementById('sneakersHeader');
     const clothingHeader = document.getElementById('clothingHeader');
-    const clothingHeader = document.getElementById('watchesHeader');
+    const watchesHeader = document.getElementById('watchesHeader');
     const dynamicGearContainer = document.getElementById('dynamic-gear');
 
     // Toggle the burger menu for mobile view
