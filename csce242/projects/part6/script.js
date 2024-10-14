@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sneakersHeader = document.getElementById('sneakersHeader');
     const clothingHeader = document.getElementById('clothingHeader');
     const watchesHeader = document.getElementById('watchesHeader');
+    const foamrollersHeader = document.getElementById('foamrollersHeader');
     const dynamicGearContainer = document.getElementById('dynamic-gear');
 
     // Toggle the burger menu for mobile view
@@ -52,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     watchesHeader.addEventListener('click', function() {
         loadGearAsOneCard('watches.json', 'Watches Collection');
+    });
+    foamrollersHeader.addEventListener('click', function() {
+        loadGearAsOneCard('foam_rollers.json', 'Foam Rollers Collection');
     });
     
 });
