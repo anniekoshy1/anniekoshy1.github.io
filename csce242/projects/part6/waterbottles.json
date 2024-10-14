@@ -1,0 +1,54 @@
+[
+    {
+      "_id": 1,
+      "name": "Lululemon Water Bottle",
+      "img_name": "images/lululemon-bottle.jpg",
+      "brand": "Lululemon",
+      "price": "$38",
+      "rating": 4.6,
+      "features": [
+        "Leak-proof",
+        "Double-wall insulation",
+        "Keeps drinks cold for 24 hours"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "Hydro Flask Standard Mouth Bottle",
+      "img_name": "images/hydroflask-bottle.jpg",
+      "brand": "Hydro Flask",
+      "price": "$45",
+      "rating": 4.8,
+      "features": [
+        "Durable stainless steel",
+        "TempShield insulation",
+        "Keeps drinks cold up to 24 hours and hot up to 12 hours"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "Owala FreeSip Bottle",
+      "img_name": "images/owala-bottle.jpg",
+      "brand": "Owala",
+      "price": "$22",
+      "rating": 4.7,
+      "features": [
+        "Spill-proof lid",
+        "Built-in carry loop",
+        "Available in multiple colors"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "Yeti Rambler Bottle",
+      "img_name": "images/yeti-bottle.jpg",
+      "brand": "Yeti",
+      "price": "$50",
+      "rating": 4.9,
+      "features": [
+        "18/8 stainless steel",
+        "Double-wall vacuum insulation",
+        "Duracoat color won't chip or crack"
+      ]
+    }
+  ]  
