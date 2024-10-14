@@ -50,4 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     clothingHeader.addEventListener('click', function() {
         loadGearAsOneCard('clothing.json', 'Clothing Collection');
     });
+    watchesHeader.addEventListener('click', function() {
+        loadGearAsOneCard('watches.json', 'Watches Collection');
+    });
 });
