@@ -1,0 +1,54 @@
+[
+    {
+      "_id": 1,
+      "name": "Goodr OG Running Sunglasses",
+      "img_name": "images/goodr-sunglasses.jpg",
+      "brand": "Goodr",
+      "price": "$25",
+      "rating": 4.7,
+      "features": [
+        "Lightweight frame",
+        "Polarized lenses",
+        "No-slip coating"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "Oakley Flak 2.0 XL",
+      "img_name": "images/oakley-flak.jpg",
+      "brand": "Oakley",
+      "price": "$170",
+      "rating": 4.9,
+      "features": [
+        "High Definition Optics",
+        "UV protection",
+        "Impact-resistant lenses"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "Roka Phantom Titanium Sunglasses",
+      "img_name": "images/roka-phantom.jpg",
+      "brand": "Roka",
+      "price": "$190",
+      "rating": 4.8,
+      "features": [
+        "Ultra-lightweight",
+        "Titanium frame",
+        "Sweat-resistant"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "Nike Tailwind Sunglasses",
+      "img_name": "images/nike-tailwind.jpg",
+      "brand": "Nike",
+      "price": "$80",
+      "rating": 4.6,
+      "features": [
+        "Ventilated nose bridge",
+        "Polycarbonate lenses",
+        "Adjustable frame"
+      ]
+    }
+  ]  

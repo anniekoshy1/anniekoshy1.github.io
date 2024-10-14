@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const watchesHeader = document.getElementById('watchesHeader');
     const foamrollersHeader = document.getElementById('foamrollersHeader');
     const bottleHeader = document.getElementById('bottleHeader');
+    const sunglassesHeader = document.getElementById('sunglassesHeader');
     const dynamicGearContainer = document.getElementById('dynamic-gear');
 
     // Toggle the burger menu for mobile view
@@ -60,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     bottleHeader.addEventListener('click', function() {
         loadGearAsOneCard('waterbottles.json', 'Water Bottles Collection');
+    });
+    sunglassesHeader.addEventListener('click', function() {
+        loadGearAsOneCard('sunglasses.json', 'Sunglasses Collection');
     });
     
 });
