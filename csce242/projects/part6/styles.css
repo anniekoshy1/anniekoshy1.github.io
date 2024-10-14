@@ -18,7 +18,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: navy;
+  background-color: #5484ef;
   color: white;
 }
 
@@ -82,7 +82,7 @@ header.main-section {
 }
 
 img {
-  border: 3px solid #0044cc;
+  border: 3px solid #5484ef;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -255,7 +255,7 @@ textarea {
 button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #0044cc;
+  background-color: #5484ef;
   color: white;
   border: none;
   border-radius: 5px;
@@ -263,12 +263,12 @@ button {
 }
 
 button:hover {
-  background-color: #003399;
+  background-color: #5484ef;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #0044cc;
+  background-color: #5484ef;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -444,7 +444,7 @@ text-align: center;
 
 .about-section h2 {
 font-size: 2.5rem; 
-color: #0044cc; 
+color: #5484ef; 
 margin-bottom: 20px; 
 }
 
@@ -495,7 +495,7 @@ flex-basis: 50%;
 
 .goals-content h2 {
 font-size: 2.5rem;
-color: #0044cc;
+color: #5484ef;
 margin-bottom: 20px;
 }
 
@@ -583,7 +583,7 @@ text-align: center;
 
 .training-section h2 {
 font-size: 2.5rem;
-color: #0044cc;
+color: #5484ef;
 margin-bottom: 20px;
 }
 
@@ -608,7 +608,7 @@ text-align: center;
 
 .tips-section h2 {
 font-size: 2.5rem;
-color: #0044cc;
+color: #5484ef;
 margin-bottom: 30px;
 }
 
@@ -624,7 +624,7 @@ margin-right: auto;
 
 /* Footer */
 footer {
-background-color: #0044cc;
+background-color: #5484ef;
 color: white;
 text-align: center;
 padding: 20px 0;
@@ -661,7 +661,7 @@ text-align: center;
 
 .recovery-section h2, .injury-prevention-section h2 {
 font-size: 2.5rem;
-color: #0044cc; 
+color: #5484ef; 
 margin-bottom: 20px;
 }
 
@@ -675,7 +675,7 @@ margin: 0 auto;
 
 /* Footer */
 footer {
-background-color: #0044cc;
+background-color: #5484ef;
 color: white;
 text-align: center;
 padding: 20px 0;
@@ -755,7 +755,7 @@ text-align: center;
 
 .contact-section h2 {
 font-size: 2.5rem;
-color: #0044cc;
+color: #5484ef;
 margin-bottom: 20px;
 }
 
@@ -802,7 +802,7 @@ resize: vertical;
 button {
 padding: 10px 20px;
 font-size: 1.2rem;
-background-color: #0044cc;
+background-color: #5484ef;
 color: white;
 border: none;
 border-radius: 5px;
@@ -811,12 +811,12 @@ transition: background-color 0.3s;
 }
 
 button:hover {
-background-color: #003399;
+background-color: #5484ef;
 }
 
 /* Footer */
 footer {
-background-color: #0044cc;
+background-color: #5484ef;
 color: white;
 text-align: center;
 padding: 20px 0;
@@ -886,7 +886,7 @@ text-align: center;
 .training-section h2 {
 font-size: 2.5rem;
 text-align: center !important; 
-color: #0044cc; 
+color: #5484ef; 
 margin-bottom: 40px; 
 display: block; 
 width: 100%; 
@@ -1106,7 +1106,7 @@ nav {
 text-align: center;
 font-size: 2.5rem;
 margin-bottom: 20px;
-color: #0044cc;
+color: #5484ef;
 }
 .gear-card {
   display: flex;
