@@ -54,4 +54,5 @@ document.addEventListener('DOMContentLoaded', function() {
     watchesHeader.addEventListener('click', function() {
         loadGearAsOneCard('watches.json', 'Watches Collection');
     });
+    
 });
