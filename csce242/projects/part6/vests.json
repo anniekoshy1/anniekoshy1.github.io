@@ -1,0 +1,54 @@
+[
+    {
+      "_id": 1,
+      "name": "Nike AeroLoft Running Vest",
+      "img_name": "images/nike-aeroloft.jpg",
+      "brand": "Nike",
+      "price": "$180",
+      "rating": 4.8,
+      "features": [
+        "Insulated with lightweight warmth",
+        "Breathable design",
+        "Water-resistant fabric"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "Patagonia Nano Puff Vest",
+      "img_name": "images/patagonia-nano.jpg",
+      "brand": "Patagonia",
+      "price": "$149",
+      "rating": 4.7,
+      "features": [
+        "Windproof and water-resistant",
+        "Recycled insulation",
+        "Packs into its own pocket"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "Salomon Agile Running Vest",
+      "img_name": "images/salomon-agile.jpg",
+      "brand": "Salomon",
+      "price": "$100",
+      "rating": 4.6,
+      "features": [
+        "Stretchable fabric for easy movement",
+        "Reflective details for visibility",
+        "Lightweight and compact design"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "The North Face Ventrix Vest",
+      "img_name": "images/northface-ventrix.jpg",
+      "brand": "The North Face",
+      "price": "$160",
+      "rating": 4.9,
+      "features": [
+        "Dynamic insulation for warmth",
+        "Breathable stretch fabric",
+        "Durable water-repellent finish"
+      ]
+    }
+  ]  
