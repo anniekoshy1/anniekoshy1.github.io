@@ -1210,22 +1210,3 @@ color: #5484ef;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-/* Mobile View */
-@media (max-width: 768px) {
-  .logo {
-    display: flex !important; 
-    align-items: center;
-    justify-content: center; 
-  }
-
-  .logo img {
-    width: 50px; 
-  }
-}
-@media (max-width: 768px) {
-  .logo span {
-    font-size: 1.2rem; 
-    color: white; 
-    display: inline-block; 
-  }
-}
