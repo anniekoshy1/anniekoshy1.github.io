@@ -1143,3 +1143,40 @@ color: #0044cc;
 #dynamic-gear {
   display: none;
 }
+#dynamic-gear {
+  display: flex; /* Flexbox for row layout */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px; /* Add space between cards */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.gear-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Set a fixed width */
+  text-align: center;
+  transition: transform 0.3s ease; /* Add a slight hover effect */
+}
+
+.gear-card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+}
+
+.gear-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.gear-details {
+  text-align: center;
+}
+
+.gear-details h3 {
+  margin: 10px 0;
+}
