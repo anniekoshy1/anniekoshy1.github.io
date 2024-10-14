@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const bottleHeader = document.getElementById('bottleHeader');
     const sunglassesHeader = document.getElementById('sunglassesHeader');
     const vestsHeader = document.getElementById('vestsHeader');
+    const lacrosseballHeader = document.getElementById('lacrosseballHeader');
     const dynamicGearContainer = document.getElementById('dynamic-gear');
 
     // Toggle the burger menu for mobile view
@@ -68,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     vestsHeader.addEventListener('click', function() {
         loadGearAsOneCard('vests.json', 'Vests Collection');
+    });
+    lacrosseballHeader.addEventListener('click', function() {
+        loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
     
 });

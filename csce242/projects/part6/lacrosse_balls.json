@@ -1,0 +1,54 @@
+[
+    {
+      "_id": 1,
+      "name": "TriggerPoint Lacrosse Ball",
+      "img_name": "images/triggerpoint-lacrosse.jpg",
+      "brand": "TriggerPoint",
+      "price": "$10",
+      "rating": 4.8,
+      "features": [
+        "Durable material for deep tissue massage",
+        "Perfect for targeting small muscle groups",
+        "Compact and portable"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "ProSource Lacrosse Ball",
+      "img_name": "images/prosource-lacrosse.jpg",
+      "brand": "ProSource",
+      "price": "$8",
+      "rating": 4.6,
+      "features": [
+        "High-density rubber construction",
+        "Ideal for trigger point therapy",
+        "Great for improving mobility"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "RAD Recovery Rounds",
+      "img_name": "images/rad-recovery.jpg",
+      "brand": "RAD",
+      "price": "$16",
+      "rating": 4.7,
+      "features": [
+        "Firmness designed for deep pressure",
+        "Includes two different density balls",
+        "Effective for myofascial release"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "Rogue Lacrosse Ball",
+      "img_name": "images/rogue-lacrosse.jpg",
+      "brand": "Rogue",
+      "price": "$12",
+      "rating": 4.9,
+      "features": [
+        "Textured surface for enhanced grip",
+        "Effective for breaking up muscle knots",
+        "Durable and easy to clean"
+      ]
+    }
+  ]  
