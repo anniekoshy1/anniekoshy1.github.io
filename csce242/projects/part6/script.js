@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    // Event listeners to load sneakers and clothing collections
     sneakersHeader.addEventListener('click', function() {
         loadGearAsOneCard('shoes.json', 'Sneakers Collection');
     });
