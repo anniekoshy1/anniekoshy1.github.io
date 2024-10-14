@@ -52,4 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
     sneakersHeader.addEventListener('click', function() {
       loadShoesAsOneCard('shoes.json'); 
     });
+    dynamicGearContainer.style.display = 'block';
+
 });
