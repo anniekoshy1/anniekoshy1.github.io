@@ -53,5 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
       loadShoesAsOneCard('shoes.json'); 
     });
     dynamicGearContainer.style.display = 'block';
+    sneakersHeader.addEventListener('click', function() {
+        loadShoesAsOneCard('shoes.json');
+        
+        // Scroll smoothly to the dynamic gear container after loading
+        dynamicGearContainer.scrollIntoView({ behavior: 'smooth' });
+      });      
 
 });

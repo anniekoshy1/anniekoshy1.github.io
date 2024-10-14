@@ -1180,3 +1180,33 @@ color: #0044cc;
 .gear-details h3 {
   margin: 10px 0;
 }
+#dynamic-gear {
+  display: flex;
+  flex-wrap: nowrap; /* Keeps all items in one row */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Adds spacing between items */
+  margin-top: 20px;
+  padding: 20px;
+  position: relative; /* Position it near the clickable area */
+}
+
+.gear-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; 
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gear-card:hover {
+  transform: translateY(-10px);
+}
+
+.gear-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
