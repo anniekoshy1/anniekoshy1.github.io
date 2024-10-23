@@ -76,20 +76,24 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('contactForm').addEventListener('submit', async function(event) {
         event.preventDefault();
       
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-      
+        const form = event.target;
+        const formData = new FormData(form);
         const formMessage = document.getElementById('formMessage');
-        
-        // Simulate sending email (use backend service or API for actual email sending)
+      
         try {
-          // Here you'd make an actual email API call. Example:
-          // await fetch('/send-email', { method: 'POST', body: JSON.stringify({ name, email, message }) });
-          
-          formMessage.textContent = "Message sent successfully!";
-          formMessage.style.color = "green";
-          formMessage.style.display = "block";
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
+          });
+      
+          if (response.ok) {
+            formMessage.textContent = "Message sent successfully!";
+            formMessage.style.color = "green";
+            formMessage.style.display = "block";
+            form.reset(); // Clear the form
+          } else {
+            throw new Error('Form submission failed.');
+          }
         } catch (error) {
           formMessage.textContent = "Error sending message. Please try again.";
           formMessage.style.color = "red";
