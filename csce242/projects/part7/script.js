@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
     document.getElementById('contactForm').addEventListener('submit', async function(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevents default form submission behavior
       
         const form = event.target;
         const formData = new FormData(form);

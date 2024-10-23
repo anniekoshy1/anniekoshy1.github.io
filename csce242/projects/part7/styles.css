@@ -1330,4 +1330,9 @@
     h2 {
       font-size: 1.5rem;
     }
+  }
+  .form-message {
+    display: none;
+    margin-top: 15px;
+    font-size: 1rem;
   }  

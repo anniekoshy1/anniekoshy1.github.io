@@ -26,6 +26,7 @@
       <div></div>
     </div>    
   </nav>
+  
   <!-- IFrame Section -->
   <section class="iframe-section">
     <h2>Our Location</h2>
@@ -39,8 +40,11 @@
     <h2>Get in Touch</h2>
     <p>If you have any questions or suggestions, feel free to reach out to us!</p>
     <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-        <!-- Replace with your actual Web3Forms access key -->
+        <!-- Web3Forms Access Key -->
         <input type="hidden" name="access_key" value="5a0c4da9-d9be-4b8e-af21-551944659e1d">
+        <input type="hidden" name="redirect" value="false">
+        
+        <!-- Form Fields -->
         <div class="form-group">
           <label for="name">Your Name:</label>
           <input type="text" id="name" name="name" required>
@@ -54,7 +58,8 @@
           <textarea id="message" name="message" required></textarea>
         </div>
         <button type="submit">Submit</button>
-      </form>
+    </form>
+    
     <!-- Success/Error Message Display -->
     <div id="formMessage" class="form-message"></div>
   </section>
@@ -68,6 +73,7 @@
     <p>© 2024 Run Time. All rights reserved.</p>
   </footer>
 
+  <!-- JavaScript File -->
   <script src="script.js"></script>
 </body>
 </html>
