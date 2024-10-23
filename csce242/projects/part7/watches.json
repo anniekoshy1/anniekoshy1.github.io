@@ -1,0 +1,62 @@
+[
+    {
+      "_id": 1,
+      "name": "Apple Watch Series 8",
+      "img_name": "images/apple-watch.jpg",
+      "brand": "Apple",
+      "price": "$399",
+      "rating": 4.7,
+      "features": [
+        "GPS and cellular options",
+        "Heart rate monitoring",
+        "Fitness tracking",
+        "ECG and blood oxygen monitoring",
+        "Water-resistant up to 50 meters"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "Garmin Forerunner 955",
+      "img_name": "images/garmin-forerunner.jpg",
+      "brand": "Garmin",
+      "price": "$499",
+      "rating": 4.8,
+      "features": [
+        "Advanced GPS tracking",
+        "Multi-sport modes",
+        "VO2 max and recovery metrics",
+        "Built-in music storage",
+        "Battery life up to 2 weeks"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "Polar Vantage V2",
+      "img_name": "images/polar-vantage.jpg",
+      "brand": "Polar",
+      "price": "$499",
+      "rating": 4.5,
+      "features": [
+        "Heart rate and GPS tracking",
+        "Running power metrics",
+        "Sleep and recovery insights",
+        "Waterproof up to 100 meters",
+        "40-hour battery life"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "Coros Pace 2",
+      "img_name": "images/coros-pace.jpg",
+      "brand": "Coros",
+      "price": "$199",
+      "rating": 4.6,
+      "features": [
+        "Lightweight design",
+        "GPS and barometer",
+        "Heart rate and stride analysis",
+        "Up to 30 hours battery life",
+        "Multi-sport modes"
+      ]
+    }
+  ]  

@@ -1,0 +1,54 @@
+[
+    {
+      "_id": 1,
+      "name": "TriggerPoint GRID Foam Roller",
+      "img_name": "images/grid-foam-roller.jpg",
+      "brand": "TriggerPoint",
+      "price": "$35",
+      "rating": 4.8,
+      "features": [
+        "Patented multi-density design",
+        "Ideal for muscle recovery and injury prevention",
+        "Durable and easy to carry"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "RumbleRoller Textured Foam Roller",
+      "img_name": "images/rumbleroller.jpg",
+      "brand": "RumbleRoller",
+      "price": "$50",
+      "rating": 4.7,
+      "features": [
+        "Deep tissue massage capability",
+        "Flexible foam knobs for muscle relief",
+        "Durable and high-density"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "AmazonBasics High-Density Foam Roller",
+      "img_name": "images/amazon-foam-roller.jpg",
+      "brand": "AmazonBasics",
+      "price": "$20",
+      "rating": 4.6,
+      "features": [
+        "Extra-firm for deep tissue massage",
+        "Lightweight and easy to transport",
+        "Durable polypropylene material"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "LuxFit Premium High-Density Foam Roller",
+      "img_name": "images/luxfit-foam-roller.jpg",
+      "brand": "LuxFit",
+      "price": "$25",
+      "rating": 4.7,
+      "features": [
+        "Helps improve muscle recovery",
+        "Great for balance and posture",
+        "Maintains shape and firmness over time"
+      ]
+    }
+  ]  
