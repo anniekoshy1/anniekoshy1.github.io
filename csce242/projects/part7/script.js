@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lacrosseballHeader.addEventListener('click', function() {
         loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
+
     document.getElementById('contactForm').addEventListener('submit', async function(event) {
         event.preventDefault(); // Prevents the default form submission behavior
     
@@ -87,18 +88,22 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             if (response.ok) {
-                formMessage.textContent = "Message sent successfully!";
-                formMessage.style.color = "green";
-                formMessage.style.display = "block";
+                if (formMessage) { // Check if formMessage exists before trying to access it
+                    formMessage.textContent = "Message sent successfully!";
+                    formMessage.style.color = "green";
+                    formMessage.style.display = "block";
+                }
                 form.reset(); // Clear the form
             } else {
                 const result = await response.json();
                 throw new Error(result.message || 'Form submission failed.');
             }
         } catch (error) {
-            formMessage.textContent = `Error: ${error.message}`;
-            formMessage.style.color = "red";
-            formMessage.style.display = "block";
+            if (formMessage) { // Check if formMessage exists before trying to access it
+                formMessage.textContent = `Error: ${error.message}`;
+                formMessage.style.color = "red";
+                formMessage.style.display = "block";
+            }
         }
-    });    
+    });
 });
