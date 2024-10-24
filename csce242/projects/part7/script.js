@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
+    // Event listeners for loading different gear collections
     sneakersHeader.addEventListener('click', function() {
         loadGearAsOneCard('shoes.json', 'Sneakers Collection');
     });
@@ -55,25 +56,32 @@ document.addEventListener('DOMContentLoaded', function() {
     clothingHeader.addEventListener('click', function() {
         loadGearAsOneCard('clothing.json', 'Clothing Collection');
     });
+
     watchesHeader.addEventListener('click', function() {
         loadGearAsOneCard('watches.json', 'Watches Collection');
     });
+
     foamrollersHeader.addEventListener('click', function() {
         loadGearAsOneCard('foam_rollers.json', 'Foam Rollers Collection');
     });
+
     bottleHeader.addEventListener('click', function() {
         loadGearAsOneCard('waterbottles.json', 'Water Bottles Collection');
     });
+
     sunglassesHeader.addEventListener('click', function() {
         loadGearAsOneCard('sunglasses.json', 'Sunglasses Collection');
     });
+
     vestsHeader.addEventListener('click', function() {
         loadGearAsOneCard('vests.json', 'Vests Collection');
     });
+
     lacrosseballHeader.addEventListener('click', function() {
         loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
 
+    // Form submission logic
     document.getElementById('contactForm').addEventListener('submit', async function(event) {
         event.preventDefault(); // Prevents the default form submission behavior
     
