@@ -1210,10 +1210,9 @@
     border-radius: 8px;
     margin-bottom: 15px;
   }
-  /* Keep the iframe container only if you have an iframe */
 .iframe-container {
     position: relative;
-    padding-bottom: 56.25%; /* Aspect Ratio */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -1228,16 +1227,15 @@
     height: 100%;
   }
   
-  /* Form message styles */
   .form-message {
     display: none;
     margin-top: 15px;
     font-size: 1rem;
   }
   
-  /* Remove or replace the font family if it's not needed */
+  
   body {
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Restore your original font */
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     background-color: #f4f4f4;
     color: #333;
   }
