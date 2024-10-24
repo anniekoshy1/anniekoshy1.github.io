@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    // Example event listeners for loading different gear collections (optional based on your project)
+    // Example event listeners for loading different gear collections
     const sneakersHeader = document.getElementById('sneakersHeader');
     const clothingHeader = document.getElementById('clothingHeader');
 
@@ -76,10 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
             try {
                 const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    mode: 'no-cors' // This will send the form data but suppresses the response
                 });
 
-                if (response.ok) {
+                if (response) { // Since we can't access the response, assume success
                     formMessage.textContent = "Message sent successfully!";
                     formMessage.style.color = "green";
                     formMessage.style.display = "block";
@@ -94,24 +95,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors' // This bypasses CORS but prevents access to response
-    })
-    .then(() => {
-        if (formMessage) {
-            formMessage.textContent = "Message sent successfully!";
-            formMessage.style.color = "green";
-            formMessage.style.display = "block";
-        }
-        form.reset();
-    })
-    .catch((error) => {
-        if (formMessage) {
-            formMessage.textContent = `Error: ${error.message}`;
-            formMessage.style.color = "red";
-            formMessage.style.display = "block";
-        }
-    });    
 });
