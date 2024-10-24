@@ -16,12 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('nav-active');
     });
 
-    // Hide the dynamic content container initially
     if (dynamicGearContainer) {
         dynamicGearContainer.style.display = 'none';
     }
 
-    // Function to load data dynamically from JSON files
     function loadGearAsOneCard(jsonFile, sectionTitle) {
         fetch(jsonFile)
             .then(response => response.json())
@@ -52,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    // Event listeners for loading different gear collections
     if (sneakersHeader) sneakersHeader.addEventListener('click', function() {
         loadGearAsOneCard('shoes.json', 'Sneakers Collection');
     });
@@ -85,11 +82,10 @@ document.addEventListener('DOMContentLoaded', function() {
         loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
 
-    // Form submission logic
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', async function(event) {
-            event.preventDefault(); // Prevents the default form submission behavior
+            event.preventDefault(); 
         
             const form = event.target;
             const formData = new FormData(form);
@@ -102,18 +98,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         
                 if (response.ok) {
-                    if (formMessage) { // Check if formMessage exists before trying to access it
+                    if (formMessage) { /
                         formMessage.textContent = "Message sent successfully!";
                         formMessage.style.color = "green";
                         formMessage.style.display = "block";
                     }
-                    form.reset(); // Clear the form
+                    form.reset();
                 } else {
                     const result = await response.json();
                     throw new Error(result.message || 'Form submission failed.');
                 }
             } catch (error) {
-                if (formMessage) { // Check if formMessage exists before trying to access it
+                if (formMessage) { 
                     formMessage.textContent = `Error: ${error.message}`;
                     formMessage.style.color = "red";
                     formMessage.style.display = "block";
