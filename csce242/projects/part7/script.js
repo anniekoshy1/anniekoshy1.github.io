@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         
                 if (response.ok) {
-                    if (formMessage) { /
+                    if (formMessage) {
                         formMessage.textContent = "Message sent successfully!";
                         formMessage.style.color = "green";
                         formMessage.style.display = "block";
