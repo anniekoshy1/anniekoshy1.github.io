@@ -853,11 +853,10 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  /* Container to align boxes in a row */
   .training-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Adds space between boxes */
+  justify-content: space-between; 
   padding: 50px 20px;
   }
   
@@ -984,7 +983,6 @@
   width: 100%;
   }
   
-  /* Mobile view adjustments */
   @media (max-width: 768px) {
   nav {
       padding: 10px 20px;
