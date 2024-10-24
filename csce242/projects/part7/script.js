@@ -1,25 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
-    const sneakersHeader = document.getElementById('sneakersHeader');
-    const clothingHeader = document.getElementById('clothingHeader');
-    const watchesHeader = document.getElementById('watchesHeader');
-    const foamrollersHeader = document.getElementById('foamrollersHeader');
-    const bottleHeader = document.getElementById('bottleHeader');
-    const sunglassesHeader = document.getElementById('sunglassesHeader');
-    const vestsHeader = document.getElementById('vestsHeader');
-    const lacrosseballHeader = document.getElementById('lacrosseballHeader');
     const dynamicGearContainer = document.getElementById('dynamic-gear');
 
     // Toggle the burger menu for mobile view
-    burger.addEventListener('click', function() {
-        navLinks.classList.toggle('nav-active');
-    });
+    if (burger && navLinks) {
+        burger.addEventListener('click', function() {
+            navLinks.classList.toggle('nav-active');
+        });
+    }
 
+    // Hide the dynamic content container initially
     if (dynamicGearContainer) {
         dynamicGearContainer.style.display = 'none';
     }
 
+    // Function to load data dynamically from JSON files (if applicable)
     function loadGearAsOneCard(jsonFile, sectionTitle) {
         fetch(jsonFile)
             .then(response => response.json())
@@ -50,78 +46,52 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    if (sneakersHeader) sneakersHeader.addEventListener('click', function() {
-        loadGearAsOneCard('shoes.json', 'Sneakers Collection');
-    });
+    // Example event listeners for loading different gear collections (optional based on your project)
+    const sneakersHeader = document.getElementById('sneakersHeader');
+    const clothingHeader = document.getElementById('clothingHeader');
 
-    if (clothingHeader) clothingHeader.addEventListener('click', function() {
-        loadGearAsOneCard('clothing.json', 'Clothing Collection');
-    });
-
-    if (watchesHeader) watchesHeader.addEventListener('click', function() {
-        loadGearAsOneCard('watches.json', 'Watches Collection');
-    });
-
-    if (foamrollersHeader) foamrollersHeader.addEventListener('click', function() {
-        loadGearAsOneCard('foam_rollers.json', 'Foam Rollers Collection');
-    });
-
-    if (bottleHeader) bottleHeader.addEventListener('click', function() {
-        loadGearAsOneCard('waterbottles.json', 'Water Bottles Collection');
-    });
-
-    if (sunglassesHeader) sunglassesHeader.addEventListener('click', function() {
-        loadGearAsOneCard('sunglasses.json', 'Sunglasses Collection');
-    });
-
-    if (vestsHeader) vestsHeader.addEventListener('click', function() {
-        loadGearAsOneCard('vests.json', 'Vests Collection');
-    });
-
-    if (lacrosseballHeader) lacrosseballHeader.addEventListener('click', function() {
-        loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
-    });
-
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function(event) {
-            event.preventDefault(); 
-            const form = event.target;
-            const formData = new FormData(form);
-            const formMessage = document.getElementById('formMessage');
-        
-            try {
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    mode: 'no-cors' // CORS workaround
-                });
-        
-                // Check if response is opaque due to no-cors mode
-                if (response.ok || response.type === "opaque") {
-                    if (formMessage) {
-                        formMessage.textContent = "Message sent successfully!";
-                        formMessage.style.color = "green";
-                        formMessage.style.display = "block";
-                    }
-                    form.reset(); // Clear the form
-                } else {
-                    throw new Error('Form submission failed.');
-                }
-            } catch (error) {
-                if (formMessage) { 
-                    formMessage.textContent = `Error: ${error.message}`;
-                    formMessage.style.color = "red";
-                    formMessage.style.display = "block";
-                }
-            }
+    if (sneakersHeader) {
+        sneakersHeader.addEventListener('click', function() {
+            loadGearAsOneCard('shoes.json', 'Sneakers Collection');
         });
     }
 
-    // Image loading error fallback
-    const image = document.querySelector('.contact-image img');
-    image.onerror = function() {
-        console.error('Failed to load sunset.jpg');
-        image.src = 'fallback-image.jpg'; // Replace with a fallback image if available
-    };
+    if (clothingHeader) {
+        clothingHeader.addEventListener('click', function() {
+            loadGearAsOneCard('clothing.json', 'Clothing Collection');
+        });
+    }
+
+    // Contact Form Submission Logic
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(event) {
+            event.preventDefault();  // Prevent the default form submission behavior
+
+            const formData = new FormData(contactForm);  // Collect the form data
+            formMessage.style.display = 'none';  // Hide message initially
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    formMessage.textContent = "Message sent successfully!";
+                    formMessage.style.color = "green";
+                    formMessage.style.display = "block";
+                    contactForm.reset();  // Clear the form fields
+                } else {
+                    throw new Error('Form submission failed. Please try again.');
+                }
+            } catch (error) {
+                formMessage.textContent = `Error: ${error.message}`;
+                formMessage.style.color = "red";
+                formMessage.style.display = "block";
+            }
+        });
+    }
 });
