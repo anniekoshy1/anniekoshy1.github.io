@@ -74,30 +74,31 @@ document.addEventListener('DOMContentLoaded', function() {
         loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
     document.getElementById('contactForm').addEventListener('submit', async function(event) {
-        event.preventDefault(); // Prevents default form submission behavior
-      
+        event.preventDefault(); // Prevents the default form submission behavior
+    
         const form = event.target;
         const formData = new FormData(form);
         const formMessage = document.getElementById('formMessage');
-      
+    
         try {
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData
-          });
-      
-          if (response.ok) {
-            formMessage.textContent = "Message sent successfully!";
-            formMessage.style.color = "green";
-            formMessage.style.display = "block";
-            form.reset(); // Clear the form
-          } else {
-            throw new Error('Form submission failed.');
-          }
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData
+            });
+    
+            if (response.ok) {
+                formMessage.textContent = "Message sent successfully!";
+                formMessage.style.color = "green";
+                formMessage.style.display = "block";
+                form.reset(); // Clear the form
+            } else {
+                const result = await response.json();
+                throw new Error(result.message || 'Form submission failed.');
+            }
         } catch (error) {
-          formMessage.textContent = "Error sending message. Please try again.";
-          formMessage.style.color = "red";
-          formMessage.style.display = "block";
+            formMessage.textContent = `Error: ${error.message}`;
+            formMessage.style.color = "red";
+            formMessage.style.display = "block";
         }
-      });      
+    });    
 });
