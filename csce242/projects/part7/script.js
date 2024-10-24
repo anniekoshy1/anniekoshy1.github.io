@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         dynamicGearContainer.style.display = 'none';
     }
 
-    // Function to load data dynamically from JSON files
     function loadGearAsOneCard(jsonFile, sectionTitle) {
         fetch(jsonFile)
             .then(response => response.json())
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    // Event listeners for loading different gear collections
     if (sneakersHeader) sneakersHeader.addEventListener('click', function() {
         loadGearAsOneCard('shoes.json', 'Sneakers Collection');
     });
@@ -84,23 +82,23 @@ document.addEventListener('DOMContentLoaded', function() {
         loadGearAsOneCard('lacrosse_balls.json', 'Lacrosse Ball Collection');
     });
 
-    // Form submission logic
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', async function(event) {
             event.preventDefault(); 
-            
             const form = event.target;
             const formData = new FormData(form);
             const formMessage = document.getElementById('formMessage');
-            
+        
             try {
                 const response = await fetch(form.action, {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    mode: 'no-cors' // CORS workaround
                 });
-                
-                if (response.ok) {
+        
+                // Check if response is opaque due to no-cors mode
+                if (response.ok || response.type === "opaque") {
                     if (formMessage) {
                         formMessage.textContent = "Message sent successfully!";
                         formMessage.style.color = "green";
@@ -108,11 +106,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                     form.reset(); // Clear the form
                 } else {
-                    const result = await response.json();
-                    throw new Error(result.message || 'Form submission failed.');
+                    throw new Error('Form submission failed.');
                 }
             } catch (error) {
-                if (formMessage) {
+                if (formMessage) { 
                     formMessage.textContent = `Error: ${error.message}`;
                     formMessage.style.color = "red";
                     formMessage.style.display = "block";
@@ -120,4 +117,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Image loading error fallback
+    const image = document.querySelector('.contact-image img');
+    image.onerror = function() {
+        console.error('Failed to load sunset.jpg');
+        image.src = 'fallback-image.jpg'; // Replace with a fallback image if available
+    };
 });
