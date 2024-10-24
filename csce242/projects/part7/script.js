@@ -94,4 +94,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // This bypasses CORS but prevents access to response
+    })
+    .then(() => {
+        if (formMessage) {
+            formMessage.textContent = "Message sent successfully!";
+            formMessage.style.color = "green";
+            formMessage.style.display = "block";
+        }
+        form.reset();
+    })
+    .catch((error) => {
+        if (formMessage) {
+            formMessage.textContent = `Error: ${error.message}`;
+            formMessage.style.color = "red";
+            formMessage.style.display = "block";
+        }
+    });    
 });
