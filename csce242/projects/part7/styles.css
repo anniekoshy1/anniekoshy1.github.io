@@ -1336,3 +1336,6 @@
     margin-top: 15px;
     font-size: 1rem;
   }  
+  body {
+    font-family: 'YourPreferredFont', sans-serif;
+}
