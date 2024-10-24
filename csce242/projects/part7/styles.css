@@ -1210,7 +1210,8 @@
     border-radius: 8px;
     margin-bottom: 15px;
   }
-  .iframe-container {
+  /* Keep the iframe container only if you have an iframe */
+.iframe-container {
     position: relative;
     padding-bottom: 56.25%; /* Aspect Ratio */
     height: 0;
@@ -1227,25 +1228,16 @@
     height: 100%;
   }
   
+  /* Form message styles */
   .form-message {
     display: none;
     margin-top: 15px;
     font-size: 1rem;
   }
   
-  @media (max-width: 768px) {
-    .iframe-container {
-      padding-bottom: 75%; /* Adjust for mobile view */
-    }
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  /* Remove or replace the font family if it's not needed */
   body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Restore your original font */
     background-color: #f4f4f4;
     color: #333;
   }
@@ -1300,27 +1292,6 @@
     background-color: #4169e1;
   }
   
-  .form-message {
-    display: none;
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-  
-  .iframe-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .contact-section, .iframe-section {
@@ -1330,12 +1301,4 @@
     h2 {
       font-size: 1.5rem;
     }
-  }
-  .form-message {
-    display: none;
-    margin-top: 15px;
-    font-size: 1rem;
-  }  
-  body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
   }  
